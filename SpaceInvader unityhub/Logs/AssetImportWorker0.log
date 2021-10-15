@@ -1,0 +1,194 @@
+Using pre-set license
+Built from '2020.3/release' branch; Version is '2020.3.12f1 (b3b2c6512326) revision 11776710'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Pro; OS build 19042.1237; Version 2009; 64bit' Language: 'es' Physical Memory: 16321 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+ COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2020.3.12f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+D:/RAY/SpaceInvader-/SpaceInvader unityhub
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+61989
+Successfully changed project path to: D:/RAY/SpaceInvader-/SpaceInvader unityhub
+D:/RAY/SpaceInvader-/SpaceInvader unityhub
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 28.70 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.3.12f1 (b3b2c6512326)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.12f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/RAY/SpaceInvader-/SpaceInvader unityhub/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: NVIDIA GeForce GT 730 (ID=0x1287)
+    Vendor:   
+    VRAM:     4052 MB
+    Driver:   27.21.14.5671
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.12f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.12f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.12f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56688
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.12f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.12f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.002823 seconds.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 27.98 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.346 seconds
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.002738 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.29 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.057 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
+Refreshing native plugins compatible for Editor in 0.28 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1386 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 64.8 MB.
+System memory in use after: 64.9 MB.
+
+Unloading 19 unused Assets to reduce memory usage. Loaded Objects now: 1820.
+Total: 1.922700 ms (FindLiveObjects: 0.138400 ms CreateObjectMapping: 0.045900 ms MarkObjects: 1.630400 ms  DeleteObjects: 0.106900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  path: Assets
+  artifactKey: Guid(00000000000000001000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets using Guid(00000000000000001000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42d402b061de3733987d63b9cc3b64de') in 0.008971 seconds 
+  Import took 0.011091 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.639887 seconds.
+  path: Assets/font
+  artifactKey: Guid(9727b0147d8b5d9419b4566c96adfba3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/font using Guid(9727b0147d8b5d9419b4566c96adfba3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '085912ca227130998300647bf0a15660') in 0.012629 seconds 
+  Import took 0.015035 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 56.621122 seconds.
+  path: Assets/font/new_space.zip
+  artifactKey: Guid(21bb0b5785298004c9ffbb75631f66a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/font/new_space.zip using Guid(21bb0b5785298004c9ffbb75631f66a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c677daccc1a2c9f1a8d7db2f32ab96b5') in 0.038874 seconds 
+  Import took 0.041404 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.097585 seconds.
+  path: Assets/font/spaceman.zip
+  artifactKey: Guid(cbc39baa060b5f4468df4ac578b1fdef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/font/spaceman.zip using Guid(cbc39baa060b5f4468df4ac578b1fdef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'efc5aa823735c894e7a1de3711ee4ca1') in 0.009267 seconds 
+  Import took 0.011708 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 40.157615 seconds.
+  path: Assets/font/New Space.ttf
+  artifactKey: Guid(883cd5503cc31a04c82e9f989271b0de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/font/New Space.ttf using Guid(883cd5503cc31a04c82e9f989271b0de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce9a3081504859fc8dc3ddafa4b22840') in 0.110797 seconds 
+  Import took 0.113461 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000226 seconds.
+  path: Assets/font/SPACEMAN.TTF
+  artifactKey: Guid(9701fc1a501b07e4fbf17dfc422e11a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/font/SPACEMAN.TTF using Guid(9701fc1a501b07e4fbf17dfc422e11a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9afc6375ba712a2aad1cd0c5cdb72cda') in 0.016159 seconds 
+  Import took 0.018544 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 16.741458 seconds.
+  path: Assets/font/SPACEMAN SDF.asset
+  artifactKey: Guid(af643fce2009cf24b9913145e2666142) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/font/SPACEMAN SDF.asset using Guid(af643fce2009cf24b9913145e2666142) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Shader 'TextMeshPro/Distance Field': fallback shader 'TextMeshPro/Mobile/Distance Field' not found
+ -> (artifact id: '01d547f24234f893d240961314fb7ba0') in 0.045977 seconds 
+  Import took 0.051318 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.684609 seconds.
+  path: Assets/font/New Space SDF.asset
+  artifactKey: Guid(2a8eb982f5b15174995cfc94af293311) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/font/New Space SDF.asset using Guid(2a8eb982f5b15174995cfc94af293311) Importer(815301076,1909f56bfc062723c751e8b465ee728b) Shader 'TextMeshPro/Distance Field': fallback shader 'TextMeshPro/Mobile/Distance Field' not found
+ -> (artifact id: '3c86ec1c4f0f588e1c05c92200ccb310') in 0.022574 seconds 
+  Import took 0.026031 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003307 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.29 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.968 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.31 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1394 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 70.2 MB.
+System memory in use after: 69.7 MB.
+
+Unloading 25 unused Assets to reduce memory usage. Loaded Objects now: 1869.
+Total: 2.243900 ms (FindLiveObjects: 0.138100 ms CreateObjectMapping: 0.043000 ms MarkObjects: 1.769200 ms  DeleteObjects: 0.292400 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 1145.477479 seconds.
+  path: Assets/font/GAME_glm.ttf
+  artifactKey: Guid(2a183d58cb645b44b89c653f30597458) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/font/GAME_glm.ttf using Guid(2a183d58cb645b44b89c653f30597458) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7051bb7ad74079ef61b1920fd9720880') in 0.088316 seconds 
+  Import took 0.093326 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 25.244994 seconds.
+  path: Assets/font/GAME_glm SDF.asset
+  artifactKey: Guid(858073705a1b8444d8f4ef5fd65c2d4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/font/GAME_glm SDF.asset using Guid(858073705a1b8444d8f4ef5fd65c2d4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd2f937509d351e12be8a54b5455f034') in 0.040025 seconds 
+  Import took 0.043247 seconds .
+
