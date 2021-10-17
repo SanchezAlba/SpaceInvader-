@@ -713,7 +713,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &241433207
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2823,7 +2823,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1058291259
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5244,14 +5244,12 @@ TextMesh:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2138750667}
-  m_Text: "La Republica Galactica\nesta sumida en el caos. \nLos\r impuestos de\nlas
-    rutas\r\ncomerciales a \nlos sistemas\r\nestelares exteriores\n estan en\r disputa.\r\n\r\nEsperando
-    resolver el \nasunto\r con un bloqueo \nde poderosas\r naves \nde guerra, la
-    codiciosa\r\nFederacion de \nComercio ha\r detenido todos \nlos env\xEDos al\r
-    peque\xF1o\nplaneta de Naboo.\r\n\r\nMientras el Congreso \nde la\r Republica
-    debate\r\ninterminablemente esta\r\nalarmante cadena de\r\nacontecimientos, \nel
-    Canciller\r Supremo\nha enviado en secreto\r\na dos Caballeros Jedi,\r\nguardianes
-    de la paz \ny la justicia\r\nen la galaxia, para \nresolver el\r\nconflicto...."
+  m_Text: "Hace aproximadamente \n30 a\xF1os, la Tierra fue atacada\npor naves extraterrestres\nen
+    busca de nuestros recursos.\n\nDebido a que estaban decicidos \na irse con ellos
+    fuera como fuese,\nse inici\xF3 una guerra que ocontin\xFAa\na d\xEDa de hoy.\n\nSe
+    han perdido muchas \nvidas en esta guerra que\nparece no tener fin.\nAun asi
+    y teniendo todo en\nnuestra contra, no hemos\nperdido la esperanza de\nque se
+    cumpla la leyenda\ny el elegido nos salve a todos\n\n\n"
   m_OffsetZ: 0
   m_CharacterSize: 1
   m_LineSpacing: 1
@@ -5314,7 +5312,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2138750667}
   m_LocalRotation: {x: 0.61168325, y: -0, z: -0, w: 0.7911028}
-  m_LocalPosition: {x: -31.945, y: -18.1, z: -442.1}
+  m_LocalPosition: {x: -82, y: -90.7, z: -20.4}
   m_LocalScale: {x: 1.5541846, y: 1.5541847, z: 1.5541847}
   m_Children: []
   m_Father: {fileID: 241433210}
