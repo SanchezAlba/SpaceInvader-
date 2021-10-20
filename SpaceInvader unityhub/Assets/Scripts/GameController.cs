@@ -8,6 +8,7 @@ public class GameController : MonoBehaviour
     public GameObject introScreen;
     public GameObject pantallaEspera;
     public GameObject pantallaInicial;
+    public GameObject pulsaAqui;
     public float time = 0f;
 
 
@@ -36,25 +37,28 @@ public class GameController : MonoBehaviour
       
     }
 
-    void EnablePanatallaEspera()
-    {
-        pantallaEspera.SetActive(true);
-    }
-    void DisablePantallaEspera()
-    {
-        pantallaEspera.SetActive(false);
-    }
-
-    void DisableIntroScreen()
+    public void DisableIntroScreen()
     {
         introScreen.SetActive(false);
     }
 
-    void EnablePantallaInicial()
+
+    public void EnablePanatallaEspera()
+    {
+        pantallaEspera.SetActive(true);
+    }
+    public void DisablePantallaEspera()
+    {
+        pantallaEspera.SetActive(false);
+    }
+
+   
+
+    public void EnablePantallaInicial()
     {
         pantallaInicial.SetActive(true);
     }
-    void DisablePantallaInicial()
+    public void DisablePantallaInicial()
     {
         pantallaInicial.SetActive(false);
     }
