@@ -2,15 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-
-public class GameController : MonoBehaviour
+public class PantallaEspera : MonoBehaviour
 {
     public GameObject introScreen;
     public GameObject pantallaEspera;
     public GameObject pantallaInicial;
-    public GameObject pulsaAqui;
-    public float time = 0f;
-
 
     // Start is called before the first frame update
     void Start()
@@ -21,16 +17,11 @@ public class GameController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-       
-
-        time = time + Time.deltaTime; // cuando acabe el texto se cambie la pantalla
-        if(time>=41.0f && introScreen.activeSelf==true) //activeSelf es si esta activado o no
+        if (Input.anyKey) // al pulsar cualquier tecla cambie la pantalla
         {
-            EnablePanatallaEspera();
-            DisableIntroScreen();
+            EnablePantallaInicial();
+            DisablePantallaEspera();
         }
-
-      
     }
 
     public void DisableIntroScreen()
@@ -48,7 +39,7 @@ public class GameController : MonoBehaviour
         pantallaEspera.SetActive(false);
     }
 
-   
+
 
     public void EnablePantallaInicial()
     {
@@ -58,4 +49,5 @@ public class GameController : MonoBehaviour
     {
         pantallaInicial.SetActive(false);
     }
+
 }

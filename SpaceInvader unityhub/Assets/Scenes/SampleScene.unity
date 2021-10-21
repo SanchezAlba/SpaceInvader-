@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1640,6 +1640,7 @@ GameObject:
   - component: {fileID: 241433209}
   - component: {fileID: 241433208}
   - component: {fileID: 241433207}
+  - component: {fileID: 241433211}
   m_Layer: 5
   m_Name: introScreen
   m_TagString: Untagged
@@ -1719,11 +1720,11 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
-  - {fileID: 1261251173}
-  - {fileID: 513865334}
-  - {fileID: 798271725}
   - {fileID: 692938453}
+  - {fileID: 1261251173}
+  - {fileID: 798271725}
   - {fileID: 2138750670}
+  - {fileID: 513865334}
   - {fileID: 1729959812}
   - {fileID: 190466663}
   - {fileID: 2006262633}
@@ -1817,6 +1818,20 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &241433211
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 241433206}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5167a99dc1f4ac4f81ab3c53a5bdb98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  introScreen: {fileID: 241433206}
+  pantallaEspera: {fileID: 1058291258}
 --- !u!1 &258788369
 GameObject:
   m_ObjectHideFlags: 0
@@ -3437,7 +3452,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 241433210}
-  m_RootOrder: 1
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -4028,7 +4043,7 @@ Transform:
   m_LocalScale: {x: 52.730774, y: 45.24753, z: 46.407722}
   m_Children: []
   m_Father: {fileID: 241433210}
-  m_RootOrder: 3
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &692938454
 SpriteRenderer:
@@ -5552,6 +5567,7 @@ GameObject:
   - component: {fileID: 1058291261}
   - component: {fileID: 1058291260}
   - component: {fileID: 1058291259}
+  - component: {fileID: 1058291263}
   m_Layer: 5
   m_Name: Pantallaespera
   m_TagString: Untagged
@@ -5648,6 +5664,21 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1058291263
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1058291258}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: edc979d9fbfbbea4db9c84986b0567d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  introScreen: {fileID: 241433206}
+  pantallaEspera: {fileID: 1058291258}
+  pantallaInicial: {fileID: 1814212412}
 --- !u!1 &1068510696
 GameObject:
   m_ObjectHideFlags: 0
@@ -6148,7 +6179,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 241433210}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -9562,11 +9593,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2138750667}
   m_LocalRotation: {x: 0.39457083, y: -0, z: -0, w: 0.91886556}
-  m_LocalPosition: {x: -4.4, y: -2.6, z: -384.6}
+  m_LocalPosition: {x: -4.4, y: 1, z: -381.1}
   m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
   m_Children: []
   m_Father: {fileID: 241433210}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 46.478, y: 0, z: 0}
 --- !u!95 &2138750671
 Animator:
