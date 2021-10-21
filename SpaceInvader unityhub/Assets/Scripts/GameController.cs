@@ -28,7 +28,7 @@ public class GameController : MonoBehaviour
         }
 
         time = time + Time.deltaTime; // cuando acabe el texto se cambie la pantalla
-        if(time>=41.0f)
+        if(time>=41.0f && introScreen.activeSelf==true)
         {
             EnablePanatallaEspera();
             DisableIntroScreen();
