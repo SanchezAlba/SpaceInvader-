@@ -9,6 +9,10 @@ public class GameController : MonoBehaviour
     public GameObject pantallaEspera;
     public GameObject pantallaInicial;
     public GameObject pulsaAqui;
+    public GameObject pantallaOpciones;
+    public GameObject pantallaJugar;
+    public GameObject pantallaRecords;
+
     public float time = 0f;
 
 
@@ -58,4 +62,24 @@ public class GameController : MonoBehaviour
     {
         pantallaInicial.SetActive(false);
     }
+
+    public void EnablePantallaOpciones()
+    {
+        pantallaOpciones.SetActive(true);
+    }
+    public void DisablePantallaOpciones()
+    {
+        pantallaOpciones.SetActive(false);
+    }
+
+    public void EnablePantallaJugar()
+    {
+        pantallaJugar.SetActive(true);
+    }
+    public void DisablePantllaJugar()
+    {
+        pantallaJugar.SetActive(false);
+       
+    }
+
 }
