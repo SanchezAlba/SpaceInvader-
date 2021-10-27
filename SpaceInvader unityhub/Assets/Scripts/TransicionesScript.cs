@@ -7,6 +7,7 @@ public class TransicionesScript : MonoBehaviour
 {
     public Animator transition;
     public float transitionTime = 1f;
+    public GameObject pantallaOpciones;
 
     // Update is called once per frame
     void Update()
