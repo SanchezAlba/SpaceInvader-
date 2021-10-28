@@ -19,7 +19,7 @@ public class SelectedButton : MonoBehaviour
         
     }
 
-    public void OnAble()
+    public void OnEnable()
     {
         selectedButton.Select();
     }
