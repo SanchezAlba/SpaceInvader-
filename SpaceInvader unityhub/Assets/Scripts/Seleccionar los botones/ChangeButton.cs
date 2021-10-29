@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ChangeSource : MonoBehaviour
+public class ChangeButton : MonoBehaviour
 {
     public GameObject currentScreen;
         public GameObject nextScreen;
