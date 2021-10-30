@@ -5,7 +5,9 @@ using UnityEngine;
 public class ChangeButton : MonoBehaviour
 {
     public GameObject currentScreen;
-        public GameObject nextScreen;
+    public GameObject nextScreen;
+
+
 
     // Start is called before the first frame update
     void Start()
@@ -16,7 +18,7 @@ public class ChangeButton : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+       
     }
 
     public void ChangeScreen()
@@ -24,4 +26,6 @@ public class ChangeButton : MonoBehaviour
         currentScreen.SetActive(false);
         nextScreen.SetActive(true);
     }
+
+  
 }

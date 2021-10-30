@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class SelectedButton : MonoBehaviour
 {
     public Button selectedButton;
+   
 
     // Start is called before the first frame update
     void Start()
@@ -22,5 +23,6 @@ public class SelectedButton : MonoBehaviour
     public void OnEnable()
     {
         selectedButton.Select();
+      
     }
 }

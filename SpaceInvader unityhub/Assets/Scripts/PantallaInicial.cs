@@ -22,11 +22,5 @@ public class PantallaInicial : MonoBehaviour
         
     }
 
-    public void ActivateSelector()
-    {
-        if(playButton)
-        {
-            selectedOne.SetActive(true);
-        }
-    }
+
 }
