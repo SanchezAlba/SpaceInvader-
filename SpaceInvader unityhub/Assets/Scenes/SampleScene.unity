@@ -2416,7 +2416,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 272, y: -166.99998}
+  m_AnchoredPosition: {x: 272, y: 172}
   m_SizeDelta: {x: 207.681, y: 86}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!95 &190466664
@@ -3263,16 +3263,16 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 281982785}
-  m_LocalRotation: {x: -0.0077248793, y: -0.0003240415, z: 0.9999701, w: -0.00031768274}
-  m_LocalPosition: {x: 0, y: 0, z: 28}
-  m_LocalScale: {x: 13.591347, y: 8.640947, z: 8.640947}
+  m_LocalRotation: {x: -0.00032290907, y: 0.007723007, z: -0.0000024939034, w: -0.99997014}
+  m_LocalPosition: {x: 0, y: 0, z: 24}
+  m_LocalScale: {x: 20.125502, y: 11.313611, z: 10.774868}
   m_Children: []
   m_Father: {fileID: 1681114283}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0.037, y: -0.885, z: 180.036}
+  m_LocalEulerAnglesHint: {x: 0.037, y: -0.885, z: 360}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 252, y: 8}
+  m_AnchoredPosition: {x: 10, y: 8}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &281982787
@@ -3288,14 +3288,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.33333334}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 7c19982ee888c1b41a1d3d87bd9612fa, type: 3}
+  m_Sprite: {fileID: 21300000, guid: eac3e078a5d71b649acdd638797af911, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -6077,7 +6077,7 @@ Transform:
   m_GameObject: {fileID: 513270497}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -1593, y: 252, z: -165}
-  m_LocalScale: {x: 61.570004, y: 61.570004, z: 61.570004}
+  m_LocalScale: {x: 59.722904, y: 59.722904, z: 59.722904}
   m_Children: []
   m_Father: {fileID: 1058291262}
   m_RootOrder: 2
@@ -10484,7 +10484,7 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: e1bc0f14ad051574a91ff8191e219104, type: 3}
@@ -15176,7 +15176,7 @@ RectTransform:
   m_GameObject: {fileID: 1634987383}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2.0358315, y: 2.0358315, z: 2.0358315}
+  m_LocalScale: {x: 2.264659, y: 2.264659, z: 2.264659}
   m_Children: []
   m_Father: {fileID: 1681114283}
   m_RootOrder: 5
@@ -17022,7 +17022,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1814212413
 MonoBehaviour:
   m_ObjectHideFlags: 0
