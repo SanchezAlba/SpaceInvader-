@@ -22,7 +22,7 @@ public class TransicionesScript : MonoBehaviour
     {
         StartCoroutine(loadLevel(SceneManager.GetActiveScene().buildIndex + 1));
     }
-    IEnumerator loadLevel(int LevelIndex)
+    IEnumerator loadLevel()
     {
         //play aniation
         transition.SetTrigger("start");
@@ -31,11 +31,31 @@ public class TransicionesScript : MonoBehaviour
         yield return new WaitForSeconds(transitionTime);
 
         //Scene manager
-        SceneManager.LoadScene(LevelIndex);
 
     }
-    
 
-    
+    public void LoadPlayersCanvasFunc()
+    {
+        StartCoroutine(LoadPlayersCanvas());
+    }
 
+    public void LoadRecordsCanvasFunc()
+
+    {
+        StartCoroutine(LoadRecordsCanvas());
+    }
+
+    public void LoadOPtionsCanvasFunc()
+    {
+        StartCoroutine(LoadOptionsCanvas());
+    }
+
+    IEnumerator LoadPlayerCanvas()
+    {
+        transition.SetTrigger("start");
+        yield return new WaitForSeconds(transitionTime);
+        GameController.instance.PlayersSelectSetActive(true);
+        GameController.instance.InitialScreenSetActive(false);
+    }
+    
 }

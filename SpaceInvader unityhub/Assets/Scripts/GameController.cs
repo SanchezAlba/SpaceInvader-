@@ -13,14 +13,10 @@ public class GameController : MonoBehaviour
     public GameObject pantallaJugar;
     public GameObject pantallaRecords;
 
+    public static GameController instance;
+
     public float time = 0f;
 
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
     // Update is called once per frame
     void Update()
