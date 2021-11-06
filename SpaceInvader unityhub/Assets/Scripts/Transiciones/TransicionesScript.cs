@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class TransicionesScript : MonoBehaviour
 {
@@ -10,19 +11,21 @@ public class TransicionesScript : MonoBehaviour
     public GameObject pantallaOpciones;
 
     // Update is called once per frame
-    void Update()
+   /* void Update()
     {
         if (Input.GetMouseButtonDown(0))
         {
             LoadNextLevel();
         }
-    }
+    }*/
 
-    public void LoadNextLevel()
+   /* public void LoadNextLevel()
     {
         StartCoroutine(loadLevel(SceneManager.GetActiveScene().buildIndex + 1));
-    }
-    IEnumerator loadLevel()
+    }*/
+
+
+   /* IEnumerator loadLevel()
     {
         //play aniation
         transition.SetTrigger("start");
@@ -32,9 +35,11 @@ public class TransicionesScript : MonoBehaviour
 
         //Scene manager
 
-    }
+    }*/
 
-    public void LoadPlayersCanvasFunc()
+    
+    
+    /*public void LoadPlayersCanvasFunc()
     {
         StartCoroutine(LoadPlayersCanvas());
     }
@@ -56,6 +61,6 @@ public class TransicionesScript : MonoBehaviour
         yield return new WaitForSeconds(transitionTime);
         GameController.instance.PlayersSelectSetActive(true);
         GameController.instance.InitialScreenSetActive(false);
-    }
+    } */
     
 }
