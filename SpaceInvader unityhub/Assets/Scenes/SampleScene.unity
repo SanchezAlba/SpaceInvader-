@@ -14594,9 +14594,9 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1935949579}
+      - m_Target: {fileID: 1935949577}
         m_TargetAssemblyTypeName: MusicSource, Assembly-CSharp
-        m_MethodName: SliderEffectsModified
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

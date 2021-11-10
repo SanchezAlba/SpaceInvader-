@@ -16,7 +16,7 @@ public class MusicSource : MonoBehaviour
 
     private void InitializeVolume()
     {
-        effectsSource.volume = PlayerPrefs.GetFloat("effectsVolumen", 1.f);
+        effectsSource.volume = PlayerPrefs.GetFloat("effectsVolumen", 1.0f);
         musicSource.volume = PlayerPrefs.GetFloat("musicVolumen", 1.0f);
 
         sliderMusic.value = musicSource.volume;
