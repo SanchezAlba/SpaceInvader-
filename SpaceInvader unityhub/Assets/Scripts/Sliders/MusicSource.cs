@@ -12,7 +12,8 @@ public class MusicSource : MonoBehaviour
    
 
     public AudioSource musicSource;
-    public AudioSource effectsSource;  
+    public AudioSource effectsSource;
+    public AudioSource pantallasSource;
 
   
 
@@ -26,8 +27,6 @@ public class MusicSource : MonoBehaviour
     {
         sliderMusic.value = musicSource.volume;
         sliderEffects.value = effectsSource.volume;
-
-
     }
 
   public void SliderMusicModified()
@@ -39,6 +38,7 @@ public class MusicSource : MonoBehaviour
     public void SliderEffectsModified()
     {
         effectsSource.volume = sliderEffects.value;
+        pantallasSource.volume = sliderEffects.value;
         
     }
    
