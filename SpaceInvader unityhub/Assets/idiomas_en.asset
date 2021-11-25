@@ -17,6 +17,58 @@ MonoBehaviour:
   m_SharedData: {fileID: 11400000, guid: 5f3a981498ed7614ea5e6c7f294f7a74, type: 2}
   m_Metadata:
     m_Items: []
-  m_TableData: []
+  m_TableData:
+  - m_Id: 22189060583424
+    m_Localized: "SETTINGS\t"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5286454419976192
+    m_Localized: MUSIC
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5286538733875200
+    m_Localized: EFFECTS
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5286692308316160
+    m_Localized: CANCEL
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5287351216697344
+    m_Localized: 1 PLAYER
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5287431378235392
+    m_Localized: 2 LOCAL COOP PLAYERS
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5287786719670272
+    m_Localized: 2 PLAYERS ONLINE COOP
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5287966940524544
+    m_Localized: BACK
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5288074893520896
+    m_Localized: PLAY
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5288429018607616
+    m_Localized: RECORDS
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5288512443314176
+    m_Localized: SETTINGS
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5289400767541248
+    m_Localized: CHOOSE ONE OPTION
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5290406591000576
+    m_Localized: LANGUAGE
+    m_Metadata:
+      m_Items: []
   references:
     version: 1

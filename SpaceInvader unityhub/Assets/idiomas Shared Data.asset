@@ -16,7 +16,55 @@ MonoBehaviour:
   m_TableCollectionNameGuidString: 5f3a981498ed7614ea5e6c7f294f7a74
   m_Entries:
   - m_Id: 22189060583424
-    m_Key: New Entry
+    m_Key: "_Configuracion\t"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5286454419976192
+    m_Key: _musica
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5286538733875200
+    m_Key: _EFECTOS
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5286692308316160
+    m_Key: _cancelar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5287351216697344
+    m_Key: _1 JUGADOR
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5287431378235392
+    m_Key: _ 2  JUGADORES LOCAL
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5287786719670272
+    m_Key: _ 2 JUGADORES ONLINE
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5287966940524544
+    m_Key: _ VOLVER
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5288074893520896
+    m_Key: _Jugar
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5288429018607616
+    m_Key: _RECORDS
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5288512443314176
+    m_Key: _OPCIONES
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5289400767541248
+    m_Key: "_ elige 1 opci\xF3n"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5290406591000576
+    m_Key: "_iodioma\t"
     m_Metadata:
       m_Items: []
   m_Metadata:
