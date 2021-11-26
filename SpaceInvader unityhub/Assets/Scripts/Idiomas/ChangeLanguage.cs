@@ -16,17 +16,13 @@ public class ChangeLanguage : MonoBehaviour
         // VAmos a buscar el índice idioma seleccionado por defecto
         Locale search = LocalizationSettings.AvailableLocales.Locales[index];
 
-        while (search != LocalizationSettings.SelectedLocale && index < LocalizationSettings.AvailableLocales.Locales.Count);
-        {
-            index++;
-            search = LocalizationSettings.AvailableLocales.Locales[index];
-        }
+        
     }
 
     public void NextLanguage()
     {
         index++;
-        if (index>2)
+        if (index>1)
         {
             index = 0;
         }
@@ -38,7 +34,7 @@ public class ChangeLanguage : MonoBehaviour
         index--;
         if (index<0)
         {
-            index = 2;
+            index = 1;
         }
         LocalizationSettings.SelectedLocale = LocalizationSettings.AvailableLocales.Locales[index];
     }
