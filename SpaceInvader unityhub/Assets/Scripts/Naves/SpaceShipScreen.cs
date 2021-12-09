@@ -30,6 +30,20 @@ public class SpaceShipScreen : MonoBehaviour
         heatSlider.value = infoSpaceShip.heat;
 
         
+        if (shieldSlider.value < infoSpaceShip.shield)
+        {
+            shieldSlider.value += Time.deltaTime * speed;
+        }
+
+        if ( speedSlider.value < infoSpaceShip.speed)
+        {
+            shieldSlider.value += Time.deltaTime * speed;
+        }
+
+        if (heatSlider.value < infoSpaceShip.heat)
+        {
+            shieldSlider.value += Time.deltaTime * speed;
+        }
 
     }
 }
