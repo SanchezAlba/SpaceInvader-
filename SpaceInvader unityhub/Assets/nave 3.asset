@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e3d6fd745dbbf440986e502d739f9be, type: 3}
   m_Name: nave 3
   m_EditorClassIdentifier: 
-  spaceshipName: nave 3
+  spaceshipName: Odyssey
   shield: 1
-  speed: 0
-  heat: 1
+  speed: 2
+  heat: 3

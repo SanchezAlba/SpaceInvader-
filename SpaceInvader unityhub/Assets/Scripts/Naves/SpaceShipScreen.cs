@@ -2,10 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class SpaceShipScreen : MonoBehaviour
 {
+    public TextMeshProUGUI labelNameShip;
+
     public SpashipData infoSpaceShip;
+    
+
 
     public Slider speedSlider;
     public Slider shieldSlider;
@@ -25,6 +30,9 @@ public class SpaceShipScreen : MonoBehaviour
 
    void Update()
     {
+        labelNameShip.text = infoSpaceShip.spaceshipName;
+
+
         speedSlider.value = infoSpaceShip.speed;
         shieldSlider.value = infoSpaceShip.shield;
         heatSlider.value = infoSpaceShip.heat;

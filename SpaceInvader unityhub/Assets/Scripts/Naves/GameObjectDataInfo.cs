@@ -19,7 +19,6 @@ public class GameObjectDataInfo : MonoBehaviour
     void Update()
     {
 
-
         labelNameShip.text = myShip[index].spaceshipName;
 
 
