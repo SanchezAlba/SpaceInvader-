@@ -6,7 +6,7 @@ using UnityEngine.Localization.Settings;
 
 public class ChangeLanguage : MonoBehaviour
 {
-    public int index = 0;
+    public int index = 1;
 
     private IEnumerator Start()
     {

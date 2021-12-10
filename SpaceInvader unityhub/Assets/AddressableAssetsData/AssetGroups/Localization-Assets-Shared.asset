@@ -21,6 +21,10 @@ MonoBehaviour:
     m_Address: Assets/idiomas Shared Data.asset
     m_ReadOnly: 1
     m_SerializedLabels: []
+  - m_GUID: f6f456b630404b341a766407b64de309
+    m_Address: Assets/Pantalla naves y opciones Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
   m_ReadOnly: 1
   m_Settings: {fileID: 11400000, guid: 600c150e24b711141b77855a8a5071eb, type: 2}
   m_SchemaSet:

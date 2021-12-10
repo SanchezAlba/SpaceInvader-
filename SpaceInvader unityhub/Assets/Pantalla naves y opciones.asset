@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5be51871efa6c3e4eae1703925c8f5ac, type: 3}
+  m_Name: Pantalla naves y opciones
+  m_EditorClassIdentifier: 
+  m_SharedTableData: {fileID: 11400000, guid: f6f456b630404b341a766407b64de309, type: 2}
+  m_Tables:
+  - {fileID: 11400000, guid: 7ce5d36f99556274b8d56e9825084c0d, type: 2}
+  - {fileID: 11400000, guid: 97ad85911ec8d614a9085a40cf62e62c, type: 2}
+  m_Extensions: []
+  m_Group: String Table
+  references:
+    version: 1
