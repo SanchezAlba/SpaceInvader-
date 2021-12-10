@@ -136,6 +136,7 @@ GameObject:
   - component: {fileID: 4295353}
   - component: {fileID: 4295352}
   - component: {fileID: 4295356}
+  - component: {fileID: 4295357}
   m_Layer: 5
   m_Name: Pantalla Naves
   m_TagString: Untagged
@@ -254,6 +255,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   selectedButton: {fileID: 927329492}
+--- !u!114 &4295357
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4295351}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bae6af61a761c09428e3beb40aa751aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  infoSpaceShip: []
+  index: 0
+  speedSlider: {fileID: 1299605468}
+  shieldSlider: {fileID: 1280625950}
+  heatSlider: {fileID: 1280625950}
+  speed: 1
 --- !u!1 &18673336
 GameObject:
   m_ObjectHideFlags: 0
@@ -19911,7 +19930,7 @@ MonoBehaviour:
   m_Direction: 0
   m_MinValue: 0
   m_MaxValue: 3
-  m_WholeNumbers: 1
+  m_WholeNumbers: 0
   m_Value: 2
   m_OnValueChanged:
     m_PersistentCalls:
@@ -20245,8 +20264,8 @@ MonoBehaviour:
   m_Direction: 0
   m_MinValue: 0
   m_MaxValue: 3
-  m_WholeNumbers: 1
-  m_Value: 2
+  m_WholeNumbers: 0
+  m_Value: 0
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -26449,7 +26468,7 @@ MonoBehaviour:
   m_Direction: 0
   m_MinValue: 0
   m_MaxValue: 3
-  m_WholeNumbers: 1
+  m_WholeNumbers: 0
   m_Value: 1
   m_OnValueChanged:
     m_PersistentCalls:

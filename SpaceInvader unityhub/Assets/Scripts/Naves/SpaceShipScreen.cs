@@ -33,17 +33,40 @@ public class SpaceShipScreen : MonoBehaviour
         // Llamar a la funcion Naves para que al pinchar START ya se seleccionen
         Naves();
 
+        /*
+         * otra forma naves:  
+         * 
+         * public GameObject modelos naves;
+         * START
+         for (int =o; i < modelos naves.<length, i++)
+        {
+            if ( i==index)
+            {
+
+                modelos NAves[i].SetActive(true);
+            }
+
+        else
+        {
+            modelos NAves[i].SetActive(false);
+        }
+        }
+
+        ***i =nave que el código "mira"
+        *index = indica la nave selecionda
+         */
+
     }
 
 
-   void Update()
+    void Update()
     {
         labelNameShip.text = infoSpaceShip[index].spaceshipName;
 
 
-        speedSlider.value = infoSpaceShip[index].speed;
+        /*speedSlider.value = infoSpaceShip[index].speed;
         shieldSlider.value = infoSpaceShip[index].shield;
-        heatSlider.value = infoSpaceShip[index].heat;
+        heatSlider.value = infoSpaceShip[index].heat;*/  //Esto hace que cada vez que cambie la nave se coloquen los valores directamente
 
         
         if (shieldSlider.value < infoSpaceShip[index].shield)
@@ -70,8 +93,12 @@ public class SpaceShipScreen : MonoBehaviour
         if (index > 2)
         {
             index = 0;
+            
         }
-  
+
+        shieldSlider.value = 0; // esto e spara que cada nave empiece desde el principio, el Slider solo sube, no baja
+        speedSlider.value = 0;
+        heatSlider.value = 0; 
     }
 
     public void PreviusSpaceShip()
@@ -81,7 +108,11 @@ public class SpaceShipScreen : MonoBehaviour
         {
             index = 2;
         }
-     
+
+        shieldSlider.value = 0;
+        speedSlider.value = 0;
+        heatSlider.value = 0;
+
     }
 
 
