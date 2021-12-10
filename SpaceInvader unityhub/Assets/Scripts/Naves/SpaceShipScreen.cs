@@ -76,12 +76,12 @@ public class SpaceShipScreen : MonoBehaviour
 
         if ( speedSlider.value < infoSpaceShip[index].speed)
         {
-            shieldSlider.value += Time.deltaTime * speed;
+            speedSlider.value += Time.deltaTime * speed;
         }
 
         if (heatSlider.value < infoSpaceShip[index].heat)
         {
-            shieldSlider.value += Time.deltaTime * speed;
+            heatSlider.value += Time.deltaTime * speed;
         }
 
     }
@@ -93,12 +93,15 @@ public class SpaceShipScreen : MonoBehaviour
         if (index > 2)
         {
             index = 0;
-            
+
+            shieldSlider.value = 0;
+            speedSlider.value = 0;
+            heatSlider.value = 0;
+
         }
 
-        shieldSlider.value = 0; // esto e spara que cada nave empiece desde el principio, el Slider solo sube, no baja
-        speedSlider.value = 0;
-        heatSlider.value = 0; 
+         // esto e spara que cada nave empiece desde el principio, el Slider solo sube, no baja
+        
     }
 
     public void PreviusSpaceShip()
