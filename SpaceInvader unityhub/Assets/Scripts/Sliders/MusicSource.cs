@@ -12,6 +12,11 @@ public class MusicSource : MonoBehaviour
    
 
     public AudioSource musicSource;
+    public AudioSource musica1;
+    public AudioSource musica2;
+    public AudioSource musica3;
+    public AudioSource musica4;
+
     public AudioSource effectsSource;
     public AudioSource pantallasSource;
 
@@ -34,6 +39,16 @@ public class MusicSource : MonoBehaviour
         musicSource.volume = sliderMusic.value;
        
     }
+
+    public void SliderMusicModified1()
+    {
+        musica1.volume = sliderMusic.value;
+        musica2.volume = sliderMusic.value;
+        musica3.volume = sliderMusic.value;
+
+
+    }
+
 
     public void SliderEffectsModified()
     {

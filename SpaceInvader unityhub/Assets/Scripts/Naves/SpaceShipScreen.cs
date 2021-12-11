@@ -93,15 +93,14 @@ public class SpaceShipScreen : MonoBehaviour
         if (index > 2)
         {
             index = 0;
-
-            shieldSlider.value = 0;
-            speedSlider.value = 0;
-            heatSlider.value = 0;
-
         }
 
-         // esto e spara que cada nave empiece desde el principio, el Slider solo sube, no baja
-        
+        shieldSlider.value = 0;
+        speedSlider.value = 0;
+        heatSlider.value = 0;
+
+         // esto es para que cada nave empiece desde el principio, el Slider solo sube, no baja
+
     }
 
     public void PreviusSpaceShip()
