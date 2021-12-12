@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: nave 1
   m_EditorClassIdentifier: 
   spaceshipName: Galaxi
-  shield: 1
-  speed: 3
-  heat: 1
+  shield: 2
+  speed: 4
+  heat: 3

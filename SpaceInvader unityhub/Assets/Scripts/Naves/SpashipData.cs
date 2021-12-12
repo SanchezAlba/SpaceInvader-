@@ -10,12 +10,12 @@ public class SpashipData : ScriptableObject
 {
 
     public string spaceshipName;
-    [Range(0, 3.0f)]
-    public int shield = 3;
-    [Range(0, 3.0f)]
-    public int speed= 3;
-    [Range(0, 3.0f)]
-    public int heat = 3;
+    [Range(0, 5.0f)]
+    public int shield = 4;
+    [Range(0, 5.0f)]
+    public int speed= 5;
+    [Range(0, 5.0f)]
+    public int heat = 5;
 
 
 }
