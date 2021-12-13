@@ -13,9 +13,9 @@ public class SpashipData : ScriptableObject
     [Range(0, 5.0f)]
     public int shield = 4;
     [Range(0, 5.0f)]
-    public int speed= 5;
+    public int speed= 2;
     [Range(0, 5.0f)]
-    public int heat = 5;
+    public int heat = 3;
 
 
 }

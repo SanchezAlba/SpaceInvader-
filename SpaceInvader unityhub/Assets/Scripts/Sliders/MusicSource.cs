@@ -53,8 +53,12 @@ public class MusicSource : MonoBehaviour
     public void SliderEffectsModified()
     {
         effectsSource.volume = sliderEffects.value;
-        pantallasSource.volume = sliderEffects.value;
         
     }
-   
+
+    public void SliderEffectsDonkey()
+
+    {
+        pantallasSource.volume = sliderEffects.value;
+    }
 }

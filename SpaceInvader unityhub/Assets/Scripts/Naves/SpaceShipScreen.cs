@@ -14,9 +14,7 @@ public class SpaceShipScreen : MonoBehaviour
     public GameObject nave2;
     public GameObject nave3;
 
-    public GameObject fondo;
-    public GameObject fondo1;
-    public GameObject fondo2;
+   
 
     public int index = 0;
 
@@ -24,7 +22,7 @@ public class SpaceShipScreen : MonoBehaviour
     public Slider shieldSlider;
     public Slider heatSlider;
 
-    private float speed = 1f;
+    private float speed = 1.5f;
 
     // Start is called before the first frame update
     void Start()
@@ -36,7 +34,7 @@ public class SpaceShipScreen : MonoBehaviour
 
         // Llamar a la funcion Naves para que al pinchar START ya se seleccionen
         Naves();
-        CambioFondo();
+        
 
         /*
          * otra forma naves:  
@@ -148,26 +146,6 @@ public class SpaceShipScreen : MonoBehaviour
         }
     }
 
-    public void CambioFondo()
-    {
-        if (index == 0)
-        {
-            fondo.SetActive(true);
-            fondo1.SetActive(false);
-            fondo2.SetActive(false);
-        }
-        if (index == 1)
-        {
-            fondo.SetActive(false);
-            fondo1.SetActive(true);
-            fondo2.SetActive(false);
-        }
-        if (index == 2)
-        {
-            fondo.SetActive(false);
-            fondo1.SetActive(false);
-            fondo2.SetActive(true);
-        }
-    }
+
 
 }
