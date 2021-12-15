@@ -9,6 +9,8 @@ public class SpaceShipScreen : MonoBehaviour
     public TextMeshProUGUI labelNameShip;
 
     public SpashipData[] infoSpaceShip;
+
+    public GameObject[] modelosNaves;
     
     public GameObject nave1;
     public GameObject nave2;
@@ -31,7 +33,8 @@ public class SpaceShipScreen : MonoBehaviour
         Debug.Log(infoSpaceShip[index].heat);
 
         // Llamar a la funcion Naves para que al pinchar START ya se seleccionen
-        Naves();
+        
+        //Naves();
         
 
         /*
@@ -64,6 +67,18 @@ public class SpaceShipScreen : MonoBehaviour
     {
         labelNameShip.text = infoSpaceShip[index].spaceshipName;
 
+
+        for(int i=0; i< modelosNaves.Length;i++)
+        {
+            if(i == index)
+            {
+                modelosNaves[i].SetActive(true);
+            }
+            else
+            {
+                modelosNaves[i].SetActive(false);
+            }
+        }
 
         /*speedSlider.value = infoSpaceShip[index].speed;
         shieldSlider.value = infoSpaceShip[index].shield;
@@ -125,7 +140,7 @@ public class SpaceShipScreen : MonoBehaviour
 
 
 
-    public void Naves()
+   /* public void Naves()
     {
         
         if (index == 0)
@@ -146,6 +161,6 @@ public class SpaceShipScreen : MonoBehaviour
             nave1.SetActive(false);
             nave2.SetActive(false);
         }
-    }
+    }*/
 
 }

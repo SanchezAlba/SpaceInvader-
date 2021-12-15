@@ -848,6 +848,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Nave 1 la buena
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: d0a40e24013e6104e8e9c783ada84bbf, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d0a40e24013e6104e8e9c783ada84bbf, type: 3}
 --- !u!4 &31743536 stripped
@@ -2185,89 +2189,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 95754881}
   m_CullTransparentMesh: 1
---- !u!1001 &95973497
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 343679769}
-    m_Modifications:
-    - target: {fileID: -8679921383154817045, guid: c5dde9823d8b05c43a34bdd08879b9b1, type: 3}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: c5dde9823d8b05c43a34bdd08879b9b1, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 16913.232
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: c5dde9823d8b05c43a34bdd08879b9b1, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 9782.335
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: c5dde9823d8b05c43a34bdd08879b9b1, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 16913.232
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: c5dde9823d8b05c43a34bdd08879b9b1, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -443.40158
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: c5dde9823d8b05c43a34bdd08879b9b1, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 9.999994
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: c5dde9823d8b05c43a34bdd08879b9b1, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -153.22705
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: c5dde9823d8b05c43a34bdd08879b9b1, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: -0.6956186
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: c5dde9823d8b05c43a34bdd08879b9b1, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0.12694347
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: c5dde9823d8b05c43a34bdd08879b9b1, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0.12694354
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: c5dde9823d8b05c43a34bdd08879b9b1, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0.69561875
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: c5dde9823d8b05c43a34bdd08879b9b1, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: c5dde9823d8b05c43a34bdd08879b9b1, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 339.316
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: c5dde9823d8b05c43a34bdd08879b9b1, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 90
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: c5dde9823d8b05c43a34bdd08879b9b1, type: 3}
-      propertyPath: m_Name
-      value: Albna_modelo nave 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: c5dde9823d8b05c43a34bdd08879b9b1, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: c5dde9823d8b05c43a34bdd08879b9b1, type: 3}
---- !u!4 &95973498 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: c5dde9823d8b05c43a34bdd08879b9b1, type: 3}
-  m_PrefabInstance: {fileID: 95973497}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &95973499 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: c5dde9823d8b05c43a34bdd08879b9b1, type: 3}
-  m_PrefabInstance: {fileID: 95973497}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &107173616
 GameObject:
   m_ObjectHideFlags: 0
@@ -5746,8 +5667,12 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 52a3c1ab8aabb50419de454b3c1620ce, type: 2}
   - {fileID: 11400000, guid: 130947eba405b1f43ad3ddc8c09a50f4, type: 2}
   - {fileID: 11400000, guid: bcfd737f76b34bf42870fdf3f4059a77, type: 2}
+  modelosNaves:
+  - {fileID: 46980568}
+  - {fileID: 1498101713}
+  - {fileID: 1067593226}
   nave1: {fileID: 46980568}
-  nave2: {fileID: 95973499}
+  nave2: {fileID: 1498101713}
   nave3: {fileID: 1067593226}
   index: 0
   speedSlider: {fileID: 475280821}
@@ -6650,7 +6575,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 31743536}
-  - {fileID: 95973498}
+  - {fileID: 1498101712}
   - {fileID: 1067593225}
   m_Father: {fileID: 4295355}
   m_RootOrder: 20
@@ -14071,7 +13996,7 @@ AudioSource:
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -18979,15 +18904,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 981b76763e5591e419500e9898d3cc27, type: 3}
       propertyPath: m_LocalScale.x
-      value: 14681.055
+      value: 10646.848
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 981b76763e5591e419500e9898d3cc27, type: 3}
       propertyPath: m_LocalScale.y
-      value: 14681.055
+      value: 10646.848
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 981b76763e5591e419500e9898d3cc27, type: 3}
       propertyPath: m_LocalScale.z
-      value: 14681.055
+      value: 10646.848
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 981b76763e5591e419500e9898d3cc27, type: 3}
       propertyPath: m_LocalPosition.x
@@ -19035,7 +18960,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 981b76763e5591e419500e9898d3cc27, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 981b76763e5591e419500e9898d3cc27, type: 3}
@@ -23692,6 +23617,85 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1482367362}
   m_CullTransparentMesh: 1
+--- !u!1001 &1498101711
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 343679769}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 98ce592802aa33a46ae23b89bfd12d0d, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 98ce592802aa33a46ae23b89bfd12d0d, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 9564.471
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 98ce592802aa33a46ae23b89bfd12d0d, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 9564.471
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 98ce592802aa33a46ae23b89bfd12d0d, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 9564.471
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 98ce592802aa33a46ae23b89bfd12d0d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -361
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 98ce592802aa33a46ae23b89bfd12d0d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 52
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 98ce592802aa33a46ae23b89bfd12d0d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -366
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 98ce592802aa33a46ae23b89bfd12d0d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.99999714
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 98ce592802aa33a46ae23b89bfd12d0d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.0023954897
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 98ce592802aa33a46ae23b89bfd12d0d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 98ce592802aa33a46ae23b89bfd12d0d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 98ce592802aa33a46ae23b89bfd12d0d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -0.275
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 98ce592802aa33a46ae23b89bfd12d0d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 98ce592802aa33a46ae23b89bfd12d0d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 98ce592802aa33a46ae23b89bfd12d0d, type: 3}
+      propertyPath: m_Name
+      value: Nave 2 la buena
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 98ce592802aa33a46ae23b89bfd12d0d, type: 3}
+--- !u!4 &1498101712 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 98ce592802aa33a46ae23b89bfd12d0d, type: 3}
+  m_PrefabInstance: {fileID: 1498101711}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1498101713 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 98ce592802aa33a46ae23b89bfd12d0d, type: 3}
+  m_PrefabInstance: {fileID: 1498101711}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1513988700
 GameObject:
   m_ObjectHideFlags: 0
@@ -31437,7 +31441,7 @@ MonoBehaviour:
   musica3: {fileID: 1144971776}
   musica4: {fileID: 0}
   effectsSource: {fileID: 919990907}
-  pantallasSource: {fileID: 734832442}
+  pantallasSource: {fileID: 619405765}
 --- !u!1 &1940051632
 GameObject:
   m_ObjectHideFlags: 0
