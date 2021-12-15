@@ -14,8 +14,6 @@ public class SpaceShipScreen : MonoBehaviour
     public GameObject nave2;
     public GameObject nave3;
 
-   
-
     public int index = 0;
 
     public Slider speedSlider;
@@ -38,8 +36,8 @@ public class SpaceShipScreen : MonoBehaviour
 
         /*
          * otra forma naves:  
-         * 
-         * public GameObject modelos naves;
+         
+          public GameObject modelos naves;
          * START
          for (int =o; i < modelos naves.<length, i++)
         {
@@ -145,7 +143,5 @@ public class SpaceShipScreen : MonoBehaviour
             nave2.SetActive(false);
         }
     }
-
-
 
 }
