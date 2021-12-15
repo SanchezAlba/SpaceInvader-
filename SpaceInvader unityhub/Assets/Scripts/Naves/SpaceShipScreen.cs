@@ -39,23 +39,23 @@ public class SpaceShipScreen : MonoBehaviour
          
           public GameObject modelos naves;
          * START
-         for (int =o; i < modelos naves.<length, i++)
+         for (int i= 0; i < infoSpaceShip.Length; i++)
         {
             if ( i==index)
             {
 
-                modelos NAves[i].SetActive(true);
+                infoSpaceShip[i].SetActive(true);
             }
 
-        else
-        {
-            modelos NAves[i].SetActive(false);
-        }
-        }
+            else
+            {
+                infoSpaceShip[i].SetActive(false);
+            }
+       } */
 
-        ***i =nave que el código "mira"
-        *index = indica la nave selecionda
-         */
+        /****i =nave que el código "mira"
+        *index = indica la nave selecionda*/
+         
 
     }
 
@@ -70,6 +70,7 @@ public class SpaceShipScreen : MonoBehaviour
         heatSlider.value = infoSpaceShip[index].heat;*/  //Esto hace que cada vez que cambie la nave se coloquen los valores directamente
 
         
+        // mientras el valor del Slider sea menor que el valor de la nave, el valor del Slider crece PREGUNTAR
         if (shieldSlider.value < infoSpaceShip[index].shield)
         {
             shieldSlider.value += Time.deltaTime * speed;
@@ -83,12 +84,15 @@ public class SpaceShipScreen : MonoBehaviour
         if (heatSlider.value < infoSpaceShip[index].heat)
         {
             heatSlider.value += Time.deltaTime * speed;
+
         }
+
+       
 
     }
 
 
-    public void NextSpaceShip()
+   public void NextSpaceShip()
     {
         index++;
         if (index > 2)
