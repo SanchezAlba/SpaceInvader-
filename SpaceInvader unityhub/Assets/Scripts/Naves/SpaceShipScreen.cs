@@ -64,23 +64,21 @@ public class SpaceShipScreen : MonoBehaviour
             heatSlider.value += Time.deltaTime * speed;
 
         }
-     
     }
 
 
    public void NextSpaceShip()
     {
+        // esto es para que cada nave empiece desde el principio, el Slider solo sube, no baja
         index++;
         if (index > 2)
-        {
+         {
             index = 0;
-        }
+         }
 
         shieldSlider.value = 0;
         speedSlider.value = 0;
         heatSlider.value = 0;
-
-      // esto es para que cada nave empiece desde el principio, el Slider solo sube, no baja
 
     }
 
@@ -88,15 +86,14 @@ public class SpaceShipScreen : MonoBehaviour
     {
         index--;
         if (index < 0)
-        {
+         {
             index = 2;
-        }
+         }
 
         shieldSlider.value = 0;
         speedSlider.value = 0;
         heatSlider.value = 0;
 
     }
-
 
 }
