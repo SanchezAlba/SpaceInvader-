@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spaceshipName: Odyssey
   shield: 3
-  speed: 3
+  speed: 4
   heat: 1

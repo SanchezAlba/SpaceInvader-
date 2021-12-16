@@ -10,6 +10,7 @@ public class SpaceShipScreen : MonoBehaviour
 
     public SpashipData[] infoSpaceShip;
     public GameObject[] modelosNaves;
+    public GameObject[] caracteristicasNaves;
     
     public int index = 0;
 
@@ -47,6 +48,20 @@ public class SpaceShipScreen : MonoBehaviour
                 modelosNaves[i].SetActive(false);
             }
         }
+
+
+        for (int i = 0; i < caracteristicasNaves.Length; i++)
+        {
+            if (i == index)
+            {
+                caracteristicasNaves[i].SetActive(true);
+            }
+            else
+            {
+                caracteristicasNaves[i].SetActive(false);
+            }
+        }
+
 
         // mientras el valor del Slider sea menor que el valor de la nave, el valor del Slider crece 
         if (shieldSlider.value < infoSpaceShip[index].shield)

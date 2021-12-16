@@ -15,4 +15,4 @@ MonoBehaviour:
   spaceshipName: Colossal
   shield: 5
   speed: 1
-  heat: 4
+  heat: 3
