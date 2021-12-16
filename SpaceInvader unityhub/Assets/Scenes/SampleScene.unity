@@ -231,8 +231,8 @@ RectTransform:
   - {fileID: 206910768}
   - {fileID: 1643751352}
   - {fileID: 809349182}
-  - {fileID: 927329491}
   - {fileID: 1934216059}
+  - {fileID: 927329491}
   - {fileID: 2037121360}
   - {fileID: 381876160}
   - {fileID: 1838673073}
@@ -806,43 +806,43 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: d0a40e24013e6104e8e9c783ada84bbf, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -434
+      value: -397
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: d0a40e24013e6104e8e9c783ada84bbf, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 46
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: d0a40e24013e6104e8e9c783ada84bbf, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -292
+      value: -249
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: d0a40e24013e6104e8e9c783ada84bbf, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.2580363
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: d0a40e24013e6104e8e9c783ada84bbf, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.013235229
+      value: 0.0017827395
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: d0a40e24013e6104e8e9c783ada84bbf, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.9653329
+      value: 0.99999845
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: d0a40e24013e6104e8e9c783ada84bbf, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.037074342
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: d0a40e24013e6104e8e9c783ada84bbf, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 3.712
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: d0a40e24013e6104e8e9c783ada84bbf, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 149.986
+      value: 180
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: d0a40e24013e6104e8e9c783ada84bbf, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: -2.567
+      value: 0.204
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: d0a40e24013e6104e8e9c783ada84bbf, type: 3}
       propertyPath: m_Name
@@ -850,7 +850,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: d0a40e24013e6104e8e9c783ada84bbf, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d0a40e24013e6104e8e9c783ada84bbf, type: 3}
@@ -5671,9 +5671,6 @@ MonoBehaviour:
   - {fileID: 46980568}
   - {fileID: 1498101713}
   - {fileID: 1067593226}
-  nave1: {fileID: 46980568}
-  nave2: {fileID: 1498101713}
-  nave3: {fileID: 1067593226}
   index: 0
   speedSlider: {fileID: 475280821}
   shieldSlider: {fileID: 1596966826}
@@ -16680,7 +16677,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 3.4, z: 1}
   m_Children: []
   m_Father: {fileID: 4295355}
-  m_RootOrder: 15
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -16738,30 +16735,6 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 289229498}
-        m_TargetAssemblyTypeName: SpaceShipScreen, Assembly-CSharp
-        m_MethodName: Naves
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 289229497}
-        m_TargetAssemblyTypeName: SpaceShipScreen, Assembly-CSharp
-        m_MethodName: 
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -17766,7 +17739,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1affb3cc44322f46a26b4bcd4cfa115, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  index: 1
+  index: 0
 --- !u!4 &997242845
 Transform:
   m_ObjectHideFlags: 0
@@ -18916,15 +18889,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 981b76763e5591e419500e9898d3cc27, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -337
+      value: -321
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 981b76763e5591e419500e9898d3cc27, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 52
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 981b76763e5591e419500e9898d3cc27, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -327
+      value: -319
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 981b76763e5591e419500e9898d3cc27, type: 3}
       propertyPath: m_LocalRotation.w
@@ -18960,7 +18933,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 981b76763e5591e419500e9898d3cc27, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 981b76763e5591e419500e9898d3cc27, type: 3}
@@ -18974,6 +18947,25 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 981b76763e5591e419500e9898d3cc27, type: 3}
   m_PrefabInstance: {fileID: 1067593224}
   m_PrefabAsset: {fileID: 0}
+--- !u!95 &1067593229
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1067593226}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 6238188c7d7ad544d8dca2f688be6efb, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1068510696
 GameObject:
   m_ObjectHideFlags: 0
@@ -23684,6 +23676,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Nave 2 la buena
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 98ce592802aa33a46ae23b89bfd12d0d, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 98ce592802aa33a46ae23b89bfd12d0d, type: 3}
 --- !u!4 &1498101712 stripped
@@ -23696,6 +23692,25 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 98ce592802aa33a46ae23b89bfd12d0d, type: 3}
   m_PrefabInstance: {fileID: 1498101711}
   m_PrefabAsset: {fileID: 0}
+--- !u!95 &1498101716
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1498101713}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 5ae9c4f0c0643f24eb898847a1028df9, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1513988700
 GameObject:
   m_ObjectHideFlags: 0
@@ -31237,7 +31252,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 3.3625, z: 1}
   m_Children: []
   m_Father: {fileID: 4295355}
-  m_RootOrder: 16
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -31291,30 +31306,6 @@ MonoBehaviour:
       - m_Target: {fileID: 289229498}
         m_TargetAssemblyTypeName: SpaceShipScreen, Assembly-CSharp
         m_MethodName: NextSpaceShip
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 289229498}
-        m_TargetAssemblyTypeName: SpaceShipScreen, Assembly-CSharp
-        m_MethodName: Naves
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 289229498}
-        m_TargetAssemblyTypeName: SpaceShipScreen, Assembly-CSharp
-        m_MethodName: CambioFondo
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

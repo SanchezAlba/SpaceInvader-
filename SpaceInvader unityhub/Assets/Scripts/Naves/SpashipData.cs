@@ -16,6 +16,7 @@ public class SpashipData : ScriptableObject
     public int speed= 2;
     [Range(0, 5.0f)]
     public int heat = 3;
-
-
 }
+
+
+

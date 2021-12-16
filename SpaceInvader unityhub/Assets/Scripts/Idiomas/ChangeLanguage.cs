@@ -4,39 +4,46 @@ using UnityEngine;
 using UnityEngine.Localization;
 using UnityEngine.Localization.Settings;
 
+
 public class ChangeLanguage : MonoBehaviour
 {
     public int index = 1;
 
-    private IEnumerator Start()
-    {
-        // espera hasta que el plugin está cargado
-        yield return LocalizationSettings.InitializationOperation;
 
-        // VAmos a buscar el índice idioma seleccionado por defecto
-        Locale search = LocalizationSettings.AvailableLocales.Locales[index];
 
-        
-    }
-
-    public void NextLanguage()
-    {
-        index++;
-        if (index>1)
+        private IEnumerator Start()
         {
-            index = 0;
-        }
-        LocalizationSettings.SelectedLocale = LocalizationSettings.AvailableLocales.Locales[index];
-    }
+            // espera hasta que el plugin está cargado
+            yield return LocalizationSettings.InitializationOperation;
 
-    public void PreviusLanguage()
-    {
-        index--;
-        if (index<0)
-        {
-            index = 1;
+            // VAmos a buscar el índice idioma seleccionado por defecto
+            Locale search = LocalizationSettings.AvailableLocales.Locales[index];
+
+
         }
-        LocalizationSettings.SelectedLocale = LocalizationSettings.AvailableLocales.Locales[index];
-    }
+
+        public void NextLanguage()
+        {
+            index++;
+            if (index > 1)
+            {
+                index = 0;
+            }
+            LocalizationSettings.SelectedLocale = LocalizationSettings.AvailableLocales.Locales[index];
+        }
+
+        public void PreviusLanguage()
+        {
+            index--;
+            if (index < 0)
+            {
+                index = 1;
+            }
+            LocalizationSettings.SelectedLocale = LocalizationSettings.AvailableLocales.Locales[index];
+        }
+    
+    
+
+
 
 }
