@@ -43,8 +43,6 @@ public class SpaceShipScreen : MonoBehaviour
         //evitar que el uodate ocupe toda la pantalla
         
         for(int i=0; i< modelosNaves.Length;i++)
-
-
         {
             if(i == index)
             {
@@ -56,21 +54,13 @@ public class SpaceShipScreen : MonoBehaviour
             }
         }
 
-
-        for (int i = 0; i < caracteristicasNaves.Length; i++)
-        {
-            if (i == index)
-            {
-                caracteristicasNaves[i].SetActive(true);
-            }
-            else
-            {
-                caracteristicasNaves[i].SetActive(false);
-            }
-        }
+        CambioImagen();
+       
 
 
         // mientras el valor del Slider sea menor que el valor de la nave, el valor del Slider crece 
+        // se pueden poner todos en uno, con "mi slider" y "valor"
+
         if (shieldSlider.value < infoSpaceShip[index].shield)
         {
             shieldSlider.value += Time.deltaTime * speed;
@@ -120,6 +110,22 @@ public class SpaceShipScreen : MonoBehaviour
         speedSlider.value = 0;
         heatSlider.value = 0;
 
+    }
+
+
+    public void CambioImagen()
+    {
+        for (int i = 0; i < caracteristicasNaves.Length; i++)
+        {
+            if (i == index)
+            {
+                caracteristicasNaves[i].SetActive(true);
+            }
+            else
+            {
+                caracteristicasNaves[i].SetActive(false);
+            }
+        }
     }
 
 }
