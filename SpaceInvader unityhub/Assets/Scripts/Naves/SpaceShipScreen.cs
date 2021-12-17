@@ -37,7 +37,14 @@ public class SpaceShipScreen : MonoBehaviour
 
         // mientras que i(nave que mira el codigo) sea menor que la cantidad de modelos naves, va a seguir
         // aumentado el array. Cuando la nave es igual al araay[i] se activa, si es diferente, se desactiva
+       
+        
+        // PAra esto hacer funciones y ponerlas en los botones, luego las llamamos en el update.
+        //evitar que el uodate ocupe toda la pantalla
+        
         for(int i=0; i< modelosNaves.Length;i++)
+
+
         {
             if(i == index)
             {
@@ -68,6 +75,10 @@ public class SpaceShipScreen : MonoBehaviour
         {
             shieldSlider.value += Time.deltaTime * speed;
         }
+        else if(shieldSlider.value > infoSpaceShip[index].shield) // esto es para que el slider baje. en la otra era que si 0 < 2 el slider sube, en esta, si 2>0 el slider baja
+        {
+            shieldSlider.value -= Time.deltaTime * speed;
+        }
 
         if ( speedSlider.value < infoSpaceShip[index].speed)
         {
@@ -91,7 +102,7 @@ public class SpaceShipScreen : MonoBehaviour
             index = 0;
          }
 
-        shieldSlider.value = 0;
+        //shieldSlider.value = 0;
         speedSlider.value = 0;
         heatSlider.value = 0;
 
@@ -105,7 +116,7 @@ public class SpaceShipScreen : MonoBehaviour
             index = 2;
          }
 
-        shieldSlider.value = 0;
+//        shieldSlider.value = 0;
         speedSlider.value = 0;
         heatSlider.value = 0;
 
