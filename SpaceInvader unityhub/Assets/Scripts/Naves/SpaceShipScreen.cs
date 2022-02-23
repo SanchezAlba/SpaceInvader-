@@ -4,17 +4,18 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
+using UnityEngine.SceneManagement;
+
 public class SpaceShipScreen : MonoBehaviour
 {
     public TextMeshProUGUI labelNameShip;
-
     public SpashipData[] infoSpaceShip;
-
     public GameObject[] modelosNaves;
-    
-    public GameObject nave1;
+    public GameObject[] caracteristicasNaves;
+
+    /*public GameObject nave1;
     public GameObject nave2;
-    public GameObject nave3;
+    public GameObject nave3;*/
 
     public int index = 0;
 
@@ -57,8 +58,21 @@ public class SpaceShipScreen : MonoBehaviour
             }
         }
 
-              /****i =nave que el código "mira"
-                 *index = indica la nave selecionda*/
+        for (int i = 0; i < caracteristicasNaves.Length; i++)
+        {
+            if (i == index)
+            {
+                caracteristicasNaves[i].SetActive(true);
+            }
+            else
+            {
+                caracteristicasNaves[i].SetActive(false);
+            }
+        }
+
+        
+        /****i =nave que el código "mira"
+           *index = indica la nave selecionda*/
 
 
         /*speedSlider.value = infoSpaceShip[index].speed;
@@ -84,6 +98,8 @@ public class SpaceShipScreen : MonoBehaviour
         }
 
        
+        //Cambiar escena
+        
 
     }
 
@@ -121,30 +137,34 @@ public class SpaceShipScreen : MonoBehaviour
 
     }
 
-
-
-
-   /* public void Naves()
+    public void CambiarEscena(int indice)
     {
-        
-        if (index == 0)
-        {
-            nave1.SetActive(true);
-            nave2.SetActive(false);
-            nave3.SetActive(false);
-        }
-        if (index == 1)
-        {
-            nave2.SetActive(true);
-            nave1.SetActive(false);
-            nave3.SetActive(false);
-        }
-        if (index == 2)
-        {
-            nave3.SetActive(true);
-            nave1.SetActive(false);
-            nave2.SetActive(false);
-        }
-    }*/
+        SceneManager.LoadScene(indice);
+    }
+
+
+    /* public void Naves()
+     {
+
+         if (index == 0)
+         {
+             nave1.SetActive(true);
+             nave2.SetActive(false);
+             nave3.SetActive(false);
+         }
+         if (index == 1)
+         {
+             nave2.SetActive(true);
+             nave1.SetActive(false);
+             nave3.SetActive(false);
+         }
+         if (index == 2)
+         {
+             nave3.SetActive(true);
+             nave1.SetActive(false);
+             nave2.SetActive(false);
+         }
+     }*/
+
 
 }
