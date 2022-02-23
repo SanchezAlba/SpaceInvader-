@@ -14,5 +14,10 @@ public class GameDataPersistent : MonoBehaviour
             GameDataPersistent.instance = this;
             DontDestroyOnLoad(this.gameObject);
         }
+
+        else
+        {
+            Destroy(this.gameObject);
+        }
     }
 }

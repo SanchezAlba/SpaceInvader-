@@ -97,9 +97,9 @@ public class SpaceShipScreen : MonoBehaviour
 
         }
 
-       
-        //Cambiar escena
-        
+
+
+       // GameDataPersistent.instance.selectedSpaceship = infoSpaceShip[index];   //ESTA LINEA VER DONDE VA, DA ERROR
 
     }
 
@@ -116,7 +116,7 @@ public class SpaceShipScreen : MonoBehaviour
         speedSlider.value = 0;
         heatSlider.value = 0;
 
-        //GameDataPersistent.instance.selectedSpaceship = infoSpaceShip[index];
+       
         // esto es para que cada nave empiece desde el principio, el Slider solo sube, no baja
 
     }
@@ -133,7 +133,7 @@ public class SpaceShipScreen : MonoBehaviour
         speedSlider.value = 0;
         heatSlider.value = 0;
 
-        //GameDataPersistent.instance.selectedSpaceship = infoSpaceShip[index];
+       // GameDataPersistent.instance.selectedSpaceship = infoSpaceShip[index];
 
     }
 
