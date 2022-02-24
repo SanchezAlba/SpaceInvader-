@@ -98,9 +98,6 @@ public class SpaceShipScreen : MonoBehaviour
         }
 
 
-
-       // GameDataPersistent.instance.selectedSpaceship = infoSpaceShip[index];   //ESTA LINEA VER DONDE VA, DA ERROR
-
     }
 
 
