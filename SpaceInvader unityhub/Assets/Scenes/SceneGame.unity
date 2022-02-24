@@ -2843,36 +2843,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: c72d93bdd41bd3740a6069994f84b669, type: 3}
   m_PrefabInstance: {fileID: 1039608685}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1070436122
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1070436123}
-  m_Layer: 0
-  m_Name: G.O Nave position
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1070436123
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1070436122}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -75.8, y: -38.6, z: 86.8}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 8
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1070701677
 GameObject:
   m_ObjectHideFlags: 0
@@ -2902,7 +2872,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8acee509de86194fbdb6b3a49548648, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  navePosition: {fileID: 1070436122}
 --- !u!4 &1070701679
 Transform:
   m_ObjectHideFlags: 0
