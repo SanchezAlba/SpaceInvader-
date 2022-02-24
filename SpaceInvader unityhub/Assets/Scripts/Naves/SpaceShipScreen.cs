@@ -116,9 +116,9 @@ public class SpaceShipScreen : MonoBehaviour
         speedSlider.value = 0;
         heatSlider.value = 0;
 
-       
-        // esto es para que cada nave empiece desde el principio, el Slider solo sube, no baja
 
+        // esto es para que cada nave empiece desde el principio, el Slider solo sube, no baja
+        GameDataPersistent.instance.selectedSpaceship = infoSpaceShip[index];
     }
 
     public void PreviusSpaceShip()
@@ -133,13 +133,14 @@ public class SpaceShipScreen : MonoBehaviour
         speedSlider.value = 0;
         heatSlider.value = 0;
 
-       // GameDataPersistent.instance.selectedSpaceship = infoSpaceShip[index];
+       GameDataPersistent.instance.selectedSpaceship = infoSpaceShip[index];
 
     }
 
     public void CambiarEscena(int indice)
     {
         SceneManager.LoadScene(indice);
+       
     }
 
 
