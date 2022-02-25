@@ -6,6 +6,7 @@ public class MovimientoNaves : MonoBehaviour
 {
     public float speed1 = 3f;
 
+    //Rigidbody2D rigidbody2d;
 
     void Start()
     {
@@ -30,5 +31,12 @@ public class MovimientoNaves : MonoBehaviour
             transform.Translate(Vector3.left * Time.deltaTime * speed1, Space.World);
             //myMove += Vector3.right * Time.deltaTime * speed1;
         }
+
+        //Forma Ruby
+        /*float horizontal = Input.GetAxis("Horizontal");
+        Vector2 move = new Vector2(horizontal,0);
+        Vector2 position = rigidbody2d.position;
+
+        position = position + move * speed1 * Time.deltaTime;*/
     }
 }

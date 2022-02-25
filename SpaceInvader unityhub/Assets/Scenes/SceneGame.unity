@@ -1033,7 +1033,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 58d07901242a232459ad46731ad63fa5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedSpaceship: {fileID: 11400000, guid: 52a3c1ab8aabb50419de454b3c1620ce, type: 2}
+  selectedSpaceship: {fileID: 11400000, guid: 130947eba405b1f43ad3ddc8c09a50f4, type: 2}
 --- !u!4 &380167056
 Transform:
   m_ObjectHideFlags: 0
