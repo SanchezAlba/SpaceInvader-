@@ -15,18 +15,18 @@ public class MovimientoNaves : MonoBehaviour
     
     void Update()
     {
-        Vector3 myMove = Vector3.zero;
+        //Vector3 myMove = Vector3.zero;
 
         if(Input.GetKey(KeyCode.RightArrow))
         {
-            // transform.Translate(Vector3.right * Time.deltaTime * speed1, Space.World);
-            myMove += Vector3.right * Time.deltaTime* speed1;
+            transform.Translate(Vector3.right * Time.deltaTime * speed1, Space.World);
+            //myMove += Vector3.right * Time.deltaTime* speed1;
         }
 
         if (Input.GetKey(KeyCode.LeftArrow))
         {
-            //transform.Translate(Vector3.left * Time.deltaTime * speed1, Space.World);
-            myMove += Vector3.right * Time.deltaTime * speed1;
+            transform.Translate(Vector3.left * Time.deltaTime * speed1, Space.World);
+            //myMove += Vector3.right * Time.deltaTime * speed1;
         }
     }
 }

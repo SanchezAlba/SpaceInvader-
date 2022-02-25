@@ -14,10 +14,10 @@ public class PlayerLoader : MonoBehaviour
         //nave.transform.localScale *= 1;
         //nave.transform = posicionNave;
 
-      nave.transform.localPosition = new Vector3(-8, 2, 8);
+      nave.transform.localPosition = new Vector3(-7, -2.5f, 89);
       // nave.transform.position = new Vector3(-69, -40, 85);
-       nave.transform.localScale= new Vector3 (100,100,100);
-       nave.transform.rotation = Quaternion.Euler(0,0,0);
+       nave.transform.localScale= new Vector3 (50,50,50);
+       nave.transform.rotation = Quaternion.Euler(0,180,0);
         
        //nave.transform.parent = transform; // esto es por si lo queremos meter dentro de un  empty. Pues para que aparezca ahí
     }
