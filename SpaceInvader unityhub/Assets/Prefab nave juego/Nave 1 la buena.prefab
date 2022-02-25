@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 1137255284098105079}
   - component: {fileID: 2894865605117774397}
   - component: {fileID: 5236816583727458894}
+  - component: {fileID: 8271858914506808114}
   m_Layer: 0
   m_Name: Nave 1 la buena
   m_TagString: Untagged
@@ -97,3 +98,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed1: 3
+--- !u!65 &8271858914506808114
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3687424028972493800}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.026131557, y: 0.029810851, z: 0.0016352016}
+  m_Center: {x: 2.2842674e-12, y: -0.0049054264, z: 0.0008176008}
