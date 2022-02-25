@@ -6,20 +6,15 @@ public class MovimientoNaves : MonoBehaviour
 {
     public float speed1 = 3f;
 
-    //Rigidbody2D rigidbody2d;
-
     void Start()
     {
         Application.targetFrameRate = 30;
     }
 
-    
     void Update()
     {
         //Vector3 myMove = Vector3.zero;  //Con esto no funcionaba pq no lo estaba aplicando. hay k aplicarlo al transform.  
         
-        //HAcer el movimiento como en ruby -> dice k queda mejor k esto
-
         if(Input.GetKey(KeyCode.RightArrow))
         {
             transform.Translate(Vector3.right * Time.deltaTime * speed1, Space.World);
@@ -32,11 +27,5 @@ public class MovimientoNaves : MonoBehaviour
             //myMove += Vector3.right * Time.deltaTime * speed1;
         }
 
-        //Forma Ruby
-        /*float horizontal = Input.GetAxis("Horizontal");
-        Vector2 move = new Vector2(horizontal,0);
-        Vector2 position = rigidbody2d.position;
-
-        position = position + move * speed1 * Time.deltaTime;*/
     }
 }

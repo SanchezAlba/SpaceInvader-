@@ -109,12 +109,13 @@ public class SpaceShipScreen : MonoBehaviour
             index = 0;
         }
 
+        // esto es para que cada nave empiece desde el principio, el Slider solo sube, no baja
         shieldSlider.value = 0;
         speedSlider.value = 0;
         heatSlider.value = 0;
 
 
-        // esto es para que cada nave empiece desde el principio, el Slider solo sube, no baja
+        
         GameDataPersistent.instance.selectedSpaceship = infoSpaceShip[index];
     }
 

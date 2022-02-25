@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 2894865605117774397}
   - component: {fileID: 5236816583727458894}
   - component: {fileID: 8271858914506808114}
+  - component: {fileID: 7179044469419778275}
   m_Layer: 0
   m_Name: Nave 1 la buena
   m_TagString: Untagged
@@ -111,3 +112,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.026131557, y: 0.029810851, z: 0.0016352016}
   m_Center: {x: 2.2842674e-12, y: -0.0049054264, z: 0.0008176008}
+--- !u!54 &7179044469419778275
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3687424028972493800}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 120
+  m_CollisionDetection: 0
