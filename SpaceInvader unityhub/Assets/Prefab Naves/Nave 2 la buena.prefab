@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 2248600254773519661}
   - component: {fileID: 2926066050437999240}
   - component: {fileID: 1116768291239435842}
-  - component: {fileID: 8288677697936431093}
   - component: {fileID: 1782892712699986653}
   m_Layer: 0
   m_Name: Nave 2 la buena
@@ -85,19 +84,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &8288677697936431093
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1477025269638283159}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 94cd9e59e948ebb4cbbd3dddfca43056, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed1: 3
 --- !u!95 &1782892712699986653
 Animator:
   serializedVersion: 3

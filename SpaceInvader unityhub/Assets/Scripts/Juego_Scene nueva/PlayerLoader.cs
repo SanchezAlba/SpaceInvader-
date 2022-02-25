@@ -15,7 +15,6 @@ public class PlayerLoader : MonoBehaviour
         //nave.transform = posicionNave;
 
       nave.transform.localPosition = new Vector3(-7, -2.5f, 89);
-      // nave.transform.position = new Vector3(-69, -40, 85);
        nave.transform.localScale= new Vector3 (50,50,50);
        nave.transform.rotation = Quaternion.Euler(0,180,0);
         

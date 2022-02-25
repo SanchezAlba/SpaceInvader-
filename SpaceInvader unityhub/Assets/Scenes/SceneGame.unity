@@ -97,7 +97,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000000, guid: ed3d8a3907c370144baacb47adb0b943, type: 2}
   m_LightingSettings: {fileID: 0}
 --- !u!196 &4
 NavMeshSettings:
@@ -1033,7 +1033,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 58d07901242a232459ad46731ad63fa5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedSpaceship: {fileID: 11400000, guid: bcfd737f76b34bf42870fdf3f4059a77, type: 2}
+  selectedSpaceship: {fileID: 11400000, guid: 52a3c1ab8aabb50419de454b3c1620ce, type: 2}
 --- !u!4 &380167056
 Transform:
   m_ObjectHideFlags: 0

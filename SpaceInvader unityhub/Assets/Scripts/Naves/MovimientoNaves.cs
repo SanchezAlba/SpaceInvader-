@@ -15,7 +15,9 @@ public class MovimientoNaves : MonoBehaviour
     
     void Update()
     {
-        //Vector3 myMove = Vector3.zero;
+        //Vector3 myMove = Vector3.zero;  //Con esto no funcionaba pq no lo estaba aplicando. hay k aplicarlo al transform.  
+        
+        //HAcer el movimiento como en ruby -> dice k queda mejor k esto
 
         if(Input.GetKey(KeyCode.RightArrow))
         {
