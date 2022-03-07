@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class MovimientoNaves : MonoBehaviour
 {
-    public float speed1 = 3f; //Hacelo con instanciA
+    public float speed1 = 3f; //Hacelo con instanciA  La instancia del GAME DATA PERSISTENT
 
     //Rigidbody2D rigidbody2d;
 

@@ -9,7 +9,7 @@ public class SpashipData : ScriptableObject
 {
 
     
-    public static SpashipData instance; // Instancia en 
+    
 
     public string spaceshipName;
     [Range(0, 5.0f)]
@@ -22,18 +22,7 @@ public class SpashipData : ScriptableObject
     public GameObject prefab; //se usa cuando se carga la escena
 
 
-    void start()
-    { 
-    
-        if(SpashipData.instance ==null)
-        {
-            SpashipData.instance = this;
-        }
-        else
-        {
-            Destroy(this);
-        }
-    }
+  
 }
 
 
