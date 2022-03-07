@@ -4,18 +4,22 @@ using UnityEngine;
 
 public class MovimientoNaves : MonoBehaviour
 {
-    public float speed1 = 3f;
+    public float speed1 = 3f; //Hacelo con instanciA
 
     //Rigidbody2D rigidbody2d;
 
     void Start()
     {
         Application.targetFrameRate = 30;
+       
     }
 
     
     void Update()
     {
+        
+
+
         //Vector3 myMove = Vector3.zero;  //Con esto no funcionaba pq no lo estaba aplicando. hay k aplicarlo al transform.  
         
         //HAcer el movimiento como en ruby -> dice k queda mejor k esto

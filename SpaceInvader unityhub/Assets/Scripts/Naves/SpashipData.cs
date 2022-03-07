@@ -8,6 +8,9 @@ using UnityEngine;
 public class SpashipData : ScriptableObject
 {
 
+    
+    public static SpashipData instance; // Instancia en 
+
     public string spaceshipName;
     [Range(0, 5.0f)]
     public int shield = 4;
@@ -17,6 +20,20 @@ public class SpashipData : ScriptableObject
     public int heat = 3;
 
     public GameObject prefab; //se usa cuando se carga la escena
+
+
+    void start()
+    { 
+    
+        if(SpashipData.instance ==null)
+        {
+            SpashipData.instance = this;
+        }
+        else
+        {
+            Destroy(this);
+        }
+    }
 }
 
 

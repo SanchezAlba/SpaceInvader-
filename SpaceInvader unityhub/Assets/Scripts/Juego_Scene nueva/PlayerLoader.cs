@@ -4,12 +4,14 @@ using UnityEngine;
 
 public class PlayerLoader : MonoBehaviour
 {
-    
+
 
     private void Awake()
     {
       GameObject nave = Instantiate(GameDataPersistent.instance.selectedSpaceship.prefab); //ponerlo public y meter al prefab 
                                                                                            // nave.transform.localPosition()  //para decir en que posicio lo queremos
+
+        
 
         //nave.transform.localScale *= 1;
         //nave.transform = posicionNave;
