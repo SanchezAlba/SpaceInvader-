@@ -19,5 +19,7 @@ public class GameDataPersistent : MonoBehaviour
         {
             Destroy(this.gameObject);
         }
+
     }
+
 }

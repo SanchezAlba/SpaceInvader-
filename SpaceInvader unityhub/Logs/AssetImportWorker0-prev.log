@@ -1,6 +1,6 @@
 Using pre-set license
 Built from '2020.3/release' branch; Version is '2020.3.12f1 (b3b2c6512326) revision 11776710'; Using compiler version '192528614'; Build Type 'Release'
-OS: 'Windows 10 Home; OS build 22000.493; Version 2009; 64bit' Language: 'es' Physical Memory: 32535 MB
+OS: 'Windows 10 Pro; OS build 19042.1526; Version 2009; 64bit' Language: 'es' Physical Memory: 16321 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
 
  COMMAND LINE ARGUMENTS:
@@ -11,61 +11,64 @@ C:\Program Files\Unity\Hub\Editor\2020.3.12f1\Editor\Unity.exe
 -name
 AssetImportWorker0
 -projectPath
-C:/Users/albas/Desktop/unity/SpaceInvader-/SpaceInvader unityhub
+D:/RAY/SpaceInvader-/SpaceInvader unityhub
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-50606
-Successfully changed project path to: C:/Users/albas/Desktop/unity/SpaceInvader-/SpaceInvader unityhub
-C:/Users/albas/Desktop/unity/SpaceInvader-/SpaceInvader unityhub
+59219
+Successfully changed project path to: D:/RAY/SpaceInvader-/SpaceInvader unityhub
+D:/RAY/SpaceInvader-/SpaceInvader unityhub
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 134.23 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 64.38 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.3.12f1 (b3b2c6512326)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2020.3.12f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path C:/Users/albas/Desktop/unity/SpaceInvader-/SpaceInvader unityhub/Assets
+[Subsystems] Discovering subsystems at path D:/RAY/SpaceInvader-/SpaceInvader unityhub/Assets
 GfxDevice: creating device client; threaded=0
 Direct3D:
-    Version:  Direct3D 11.0 [level 11.1]
-    Renderer: NVIDIA GeForce RTX 3060 Laptop GPU (ID=0x2520)
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: NVIDIA GeForce GT 730 (ID=0x1287)
     Vendor:   
-    VRAM:     6023 MB
-    Driver:   30.0.14.7247
+    VRAM:     4052 MB
+    Driver:   27.21.14.5671
 Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2020.3.12f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2020.3.12f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2020.3.12f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56464
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56768
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.12f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2020.3.12f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.002570 seconds.
+Registered in 0.002735 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 69.22 ms, found 2 plugins.
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 52.94 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.625 seconds
+- Completed reload, in  2.156 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.010074 seconds.
+Registered in 0.003906 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.76 ms, found 2 plugins.
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.66 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.750 seconds
+- Completed reload, in  1.242 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.07 seconds
-Refreshing native plugins compatible for Editor in 0.99 ms, found 2 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
+Refreshing native plugins compatible for Editor in 0.52 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2471 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 104.3 MB.
-System memory in use after: 104.5 MB.
+Unloading 2470 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 104.5 MB.
+System memory in use after: 104.7 MB.
 
-Unloading 29 unused Assets to reduce memory usage. Loaded Objects now: 2896.
-Total: 3.860300 ms (FindLiveObjects: 0.363100 ms CreateObjectMapping: 0.162500 ms MarkObjects: 3.181800 ms  DeleteObjects: 0.151700 ms)
+Unloading 30 unused Assets to reduce memory usage. Loaded Objects now: 2894.
+Total: 2.697900 ms (FindLiveObjects: 0.232200 ms CreateObjectMapping: 0.128000 ms MarkObjects: 2.197500 ms  DeleteObjects: 0.138900 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -74,36 +77,36 @@ AssetImportParameters requested are different than current active one (requested
   custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  path: Assets/Scripts/Musica/MusicScenes.cs
-  artifactKey: Guid(0aaa79c63a45d4d44a8fe269b5c7cd5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Musica/MusicScenes.cs using Guid(0aaa79c63a45d4d44a8fe269b5c7cd5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '40f2f4051e7c0439787acc564c712028') in 0.042390 seconds 
-  Import took 0.047655 seconds .
+  path: Assets/imagenes/fondo planeta.jpg
+  artifactKey: Guid(a42c0dddb45399c4683b294308accefa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/imagenes/fondo planeta.jpg using Guid(a42c0dddb45399c4683b294308accefa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1554c14c79503f06d6a2a3e3249ba973') in 0.144812 seconds 
+  Import took 0.148784 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.014706 seconds.
+Registered in 0.003911 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.17 ms, found 2 plugins.
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.52 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.953 seconds
+- Completed reload, in  1.159 seconds
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.84 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.53 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 2389 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 99.6 MB.
-System memory in use after: 99.8 MB.
+System memory in use before: 102.8 MB.
+System memory in use after: 103.0 MB.
 
-Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 2898.
-Total: 4.324000 ms (FindLiveObjects: 0.407200 ms CreateObjectMapping: 0.212400 ms MarkObjects: 3.670000 ms  DeleteObjects: 0.032700 ms)
+Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 2902.
+Total: 3.280200 ms (FindLiveObjects: 0.235700 ms CreateObjectMapping: 0.126100 ms MarkObjects: 2.826400 ms  DeleteObjects: 0.090800 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -112,644 +115,37 @@ AssetImportParameters requested are different than current active one (requested
   custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 66.983848 seconds.
-  path: Assets/Scripts/Musica/MusicScenes.cs
-  artifactKey: Guid(0aaa79c63a45d4d44a8fe269b5c7cd5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Musica/MusicScenes.cs using Guid(0aaa79c63a45d4d44a8fe269b5c7cd5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e3c3ca7b87a0d022ede3c564e914cbc1') in 0.010666 seconds 
-  Import took 0.018495 seconds .
+  Time since last request: 687.417649 seconds.
+  path: Assets/Prefab nave juego/Nave 1 la buena.prefab
+  artifactKey: Guid(1f5cc5c051d0b7f4d9afc18063300f4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab nave juego/Nave 1 la buena.prefab using Guid(1f5cc5c051d0b7f4d9afc18063300f4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7948dc7627eb36083809260e25f41405') in 0.086186 seconds 
+  Import took 0.090286 seconds .
 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.009422 seconds.
+Registered in 0.004203 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.63 ms, found 2 plugins.
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.52 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.289 seconds
+- Completed reload, in  1.146 seconds
 Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.55 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 0.54 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 2389 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 99.6 MB.
-System memory in use after: 99.8 MB.
-
-Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 2900.
-Total: 4.013100 ms (FindLiveObjects: 0.391700 ms CreateObjectMapping: 0.137700 ms MarkObjects: 3.393600 ms  DeleteObjects: 0.065000 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.014767 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.91 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.654 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.69 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2388 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 99.6 MB.
-System memory in use after: 99.9 MB.
-
-Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 2901.
-Total: 4.754500 ms (FindLiveObjects: 0.388200 ms CreateObjectMapping: 0.327800 ms MarkObjects: 3.953800 ms  DeleteObjects: 0.083400 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.007274 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.56 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.346 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.63 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2388 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 99.6 MB.
-System memory in use after: 99.9 MB.
-
-Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 2903.
-Total: 4.502900 ms (FindLiveObjects: 0.286800 ms CreateObjectMapping: 0.105200 ms MarkObjects: 4.053000 ms  DeleteObjects: 0.056700 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 150.417018 seconds.
-  path: Assets/Scenes/SceneGame.unity
-  artifactKey: Guid(b909488cfcd6e4643bb831eb0282d271) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/SceneGame.unity using Guid(b909488cfcd6e4643bb831eb0282d271) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '13a83428fb14f3d21c4433a954a790a9') in 0.034482 seconds 
-  Import took 0.040355 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.065078 seconds.
-  path: Assets/Scenes/SceneGame.unity
-  artifactKey: Guid(b909488cfcd6e4643bb831eb0282d271) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/SceneGame.unity using Guid(b909488cfcd6e4643bb831eb0282d271) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '13a83428fb14f3d21c4433a954a790a9') in 0.004459 seconds 
-  Import took 0.009166 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 30.245348 seconds.
-  path: Assets/Musica/Música Épica Instrumental de Batalla Legendaria Música Motivadora Épica de Guerra 2017_48k.mp3
-  artifactKey: Guid(f4e31b1ce055d564b800bdf340ddab8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Musica/Música Épica Instrumental de Batalla Legendaria Música Motivadora Épica de Guerra 2017_48k.mp3 using Guid(f4e31b1ce055d564b800bdf340ddab8d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cf59f55161fcc19a00758582319b3539') in 0.195948 seconds 
-  Import took 0.200859 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.511970 seconds.
-  path: Assets/Musica/misc287.mp3
-  artifactKey: Guid(21447efdde9f7a8429dc8c2ab5a33909) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Musica/misc287.mp3 using Guid(21447efdde9f7a8429dc8c2ab5a33909) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a67f9f1937350560b7b231d0de8875ef') in 0.020783 seconds 
-  Import took 0.029292 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.696637 seconds.
-  path: Assets/Musica/Botones Pnt. JUgar
-  artifactKey: Guid(1e73e7b25ccd6314aa96c329aaef37fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Musica/Botones Pnt. JUgar using Guid(1e73e7b25ccd6314aa96c329aaef37fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '36779c0c4a21649f28d9997b76b1074e') in 0.006914 seconds 
-  Import took 0.012879 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 6.173191 seconds.
-  path: Assets/Musica/Botones Pnt. JUgar/Musica Epica 2.mp3
-  artifactKey: Guid(93ac65233501ac241aedfa4c0ab2bff7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Musica/Botones Pnt. JUgar/Musica Epica 2.mp3 using Guid(93ac65233501ac241aedfa4c0ab2bff7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc775613120e333dfccd063d0c6183d2') in 0.011590 seconds 
-  Import took 0.017007 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 6.475737 seconds.
-  path: Assets/Musica/Botones Pnt. JUgar/Música Épica 1.mp3
-  artifactKey: Guid(f7d5610ebf2de724582ec19534336204) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Musica/Botones Pnt. JUgar/Música Épica 1.mp3 using Guid(f7d5610ebf2de724582ec19534336204) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cbf682385ded5072008c3ec36c1f68c2') in 0.017033 seconds 
-  Import took 0.023620 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 7.589148 seconds.
-  path: Assets/Musica/Botones Pnt. JUgar/Musica Epica 3.mp3
-  artifactKey: Guid(3115b81a48f0f9d478baace6c893368e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Musica/Botones Pnt. JUgar/Musica Epica 3.mp3 using Guid(3115b81a48f0f9d478baace6c893368e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '63ea30bde32ed372194a761cf9dbf3ab') in 0.018931 seconds 
-  Import took 0.026423 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 36.878440 seconds.
-  path: Assets/Scenes/SampleScene.unity
-  artifactKey: Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/SampleScene.unity using Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ac441f7cccb2607728be3d48b3557a05') in 0.005455 seconds 
-  Import took 0.009892 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.009999 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.52 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.217 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.87 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2388 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 102.6 MB.
-System memory in use after: 102.8 MB.
-
-Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 2914.
-Total: 5.673700 ms (FindLiveObjects: 0.484800 ms CreateObjectMapping: 0.186100 ms MarkObjects: 4.956900 ms  DeleteObjects: 0.044700 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 63.499946 seconds.
-  path: Assets/Scenes/SceneGame.unity
-  artifactKey: Guid(b909488cfcd6e4643bb831eb0282d271) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/SceneGame.unity using Guid(b909488cfcd6e4643bb831eb0282d271) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3dc22bfaa55e4570ca3663398e6aab43') in 0.025424 seconds 
-  Import took 0.031478 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.006510 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.67 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.621 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 1.58 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2388 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 102.7 MB.
-System memory in use after: 102.9 MB.
-
-Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 2916.
-Total: 4.708600 ms (FindLiveObjects: 0.721400 ms CreateObjectMapping: 0.242000 ms MarkObjects: 3.697900 ms  DeleteObjects: 0.045700 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 372.736945 seconds.
-  path: Assets/Prefab nave juego/Nave 1 la buena.prefab
-  artifactKey: Guid(1f5cc5c051d0b7f4d9afc18063300f4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab nave juego/Nave 1 la buena.prefab using Guid(1f5cc5c051d0b7f4d9afc18063300f4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '309cb6ecfc25021632d1c2cb03f217a9') in 0.095441 seconds 
-  Import took 0.100060 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 7.563433 seconds.
-  path: Assets/Prefab nave juego/Nave 1 la buena.prefab
-  artifactKey: Guid(1f5cc5c051d0b7f4d9afc18063300f4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab nave juego/Nave 1 la buena.prefab using Guid(1f5cc5c051d0b7f4d9afc18063300f4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aaeb85f735e4663836585dc58790672c') in 0.012929 seconds 
-  Import took 0.018198 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.512728 seconds.
-  path: Assets/Prefab nave juego/Nave 1 la buena.prefab
-  artifactKey: Guid(1f5cc5c051d0b7f4d9afc18063300f4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab nave juego/Nave 1 la buena.prefab using Guid(1f5cc5c051d0b7f4d9afc18063300f4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '531ea0cd550857267a726195efd3ec68') in 0.011788 seconds 
-  Import took 0.016338 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 4.055524 seconds.
-  path: Assets/Prefab nave juego/Nave 1 la buena.prefab
-  artifactKey: Guid(1f5cc5c051d0b7f4d9afc18063300f4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab nave juego/Nave 1 la buena.prefab using Guid(1f5cc5c051d0b7f4d9afc18063300f4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '994d5a4a4e359c4f8f421240e13c60af') in 0.013823 seconds 
-  Import took 0.019235 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.184412 seconds.
-  path: Assets/Prefab nave juego/Nave 1 la buena.prefab
-  artifactKey: Guid(1f5cc5c051d0b7f4d9afc18063300f4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab nave juego/Nave 1 la buena.prefab using Guid(1f5cc5c051d0b7f4d9afc18063300f4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '803b1f7540e7a7f81b8d954ba2df6a1c') in 0.014056 seconds 
-  Import took 0.019025 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.790846 seconds.
-  path: Assets/Prefab nave juego/Nave 1 la buena.prefab
-  artifactKey: Guid(1f5cc5c051d0b7f4d9afc18063300f4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab nave juego/Nave 1 la buena.prefab using Guid(1f5cc5c051d0b7f4d9afc18063300f4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f4b12ac056909c1e170da4278f0d3cb') in 0.013953 seconds 
-  Import took 0.020132 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.429437 seconds.
-  path: Assets/Prefab nave juego/Nave 1 la buena.prefab
-  artifactKey: Guid(1f5cc5c051d0b7f4d9afc18063300f4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab nave juego/Nave 1 la buena.prefab using Guid(1f5cc5c051d0b7f4d9afc18063300f4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd74b7d099d761cf0d9af2ac25d78b709') in 0.014759 seconds 
-  Import took 0.020694 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.348192 seconds.
-  path: Assets/Prefab nave juego/Nave 1 la buena.prefab
-  artifactKey: Guid(1f5cc5c051d0b7f4d9afc18063300f4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab nave juego/Nave 1 la buena.prefab using Guid(1f5cc5c051d0b7f4d9afc18063300f4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef6bd1ba55c5e17d0d8924f9ad36743b') in 0.014617 seconds 
-  Import took 0.021858 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.596301 seconds.
-  path: Assets/Prefab nave juego/Nave 2 la buena.prefab
-  artifactKey: Guid(2f25ceffc81690f4a8e8f266988ca9ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab nave juego/Nave 2 la buena.prefab using Guid(2f25ceffc81690f4a8e8f266988ca9ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0278e1e1ba653c1a5baa62200c826437') in 0.014818 seconds 
-  Import took 0.019138 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 4.294543 seconds.
-  path: Assets/Prefab nave juego/Nave 2 la buena.prefab
-  artifactKey: Guid(2f25ceffc81690f4a8e8f266988ca9ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab nave juego/Nave 2 la buena.prefab using Guid(2f25ceffc81690f4a8e8f266988ca9ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '51eb2e89e2955fea6d717ba1a2d1ea1e') in 0.015295 seconds 
-  Import took 0.021723 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.982540 seconds.
-  path: Assets/Prefab nave juego/Nave 2 la buena.prefab
-  artifactKey: Guid(2f25ceffc81690f4a8e8f266988ca9ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab nave juego/Nave 2 la buena.prefab using Guid(2f25ceffc81690f4a8e8f266988ca9ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '10ea5a5e29df13a94eafe87f18857168') in 0.013102 seconds 
-  Import took 0.018114 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.368997 seconds.
-  path: Assets/Prefab nave juego/Nave 2 la buena.prefab
-  artifactKey: Guid(2f25ceffc81690f4a8e8f266988ca9ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab nave juego/Nave 2 la buena.prefab using Guid(2f25ceffc81690f4a8e8f266988ca9ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '33ef65bdd09f9de4b547e1f5ecac9cde') in 0.011095 seconds 
-  Import took 0.016092 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.200048 seconds.
-  path: Assets/Prefab nave juego/Nave 2 la buena.prefab
-  artifactKey: Guid(2f25ceffc81690f4a8e8f266988ca9ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab nave juego/Nave 2 la buena.prefab using Guid(2f25ceffc81690f4a8e8f266988ca9ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd2358e8ee948b30b59ff94be493d193b') in 0.012872 seconds 
-  Import took 0.018103 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.405486 seconds.
-  path: Assets/Prefab nave juego/Nave 2 la buena.prefab
-  artifactKey: Guid(2f25ceffc81690f4a8e8f266988ca9ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab nave juego/Nave 2 la buena.prefab using Guid(2f25ceffc81690f4a8e8f266988ca9ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '47a8bb25eb38b7a680235a18250f2c84') in 0.013362 seconds 
-  Import took 0.019037 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.982587 seconds.
-  path: Assets/Prefab nave juego/Nave 2 la buena.prefab
-  artifactKey: Guid(2f25ceffc81690f4a8e8f266988ca9ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab nave juego/Nave 2 la buena.prefab using Guid(2f25ceffc81690f4a8e8f266988ca9ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ec55a35218dde0a22b877226d93c735b') in 0.012793 seconds 
-  Import took 0.019807 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.265572 seconds.
-  path: Assets/Prefab nave juego/Nave 2 la buena.prefab
-  artifactKey: Guid(2f25ceffc81690f4a8e8f266988ca9ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab nave juego/Nave 2 la buena.prefab using Guid(2f25ceffc81690f4a8e8f266988ca9ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f10d9c0e888ff4451bdbd149ce5a3d6b') in 0.012114 seconds 
-  Import took 0.017798 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.018142 seconds.
-  path: Assets/Prefab nave juego/Nave 2 la buena.prefab
-  artifactKey: Guid(2f25ceffc81690f4a8e8f266988ca9ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab nave juego/Nave 2 la buena.prefab using Guid(2f25ceffc81690f4a8e8f266988ca9ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f10d9c0e888ff4451bdbd149ce5a3d6b') in 0.012022 seconds 
-  Import took 0.016779 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.458547 seconds.
-  path: Assets/Prefab nave juego/Nave 3 la buena.prefab
-  artifactKey: Guid(f45a05160f01dcf44a1c577030a2cf7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab nave juego/Nave 3 la buena.prefab using Guid(f45a05160f01dcf44a1c577030a2cf7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ccaef365774fd26ff063acebb6f3c94b') in 0.012460 seconds 
-  Import took 0.017556 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.252103 seconds.
-  path: Assets/Prefab nave juego/Nave 3 la buena.prefab
-  artifactKey: Guid(f45a05160f01dcf44a1c577030a2cf7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab nave juego/Nave 3 la buena.prefab using Guid(f45a05160f01dcf44a1c577030a2cf7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d6fb15594e8835ef6f6f2abca70b511') in 0.012026 seconds 
-  Import took 0.016399 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 5.204073 seconds.
-  path: Assets/Prefab nave juego/Nave 3 la buena.prefab
-  artifactKey: Guid(f45a05160f01dcf44a1c577030a2cf7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab nave juego/Nave 3 la buena.prefab using Guid(f45a05160f01dcf44a1c577030a2cf7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e5f29f8b477e4da81388bfbeeb8d5885') in 0.012107 seconds 
-  Import took 0.016573 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.011926 seconds.
-  path: Assets/Prefab nave juego/Nave 3 la buena.prefab
-  artifactKey: Guid(f45a05160f01dcf44a1c577030a2cf7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab nave juego/Nave 3 la buena.prefab using Guid(f45a05160f01dcf44a1c577030a2cf7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e5f29f8b477e4da81388bfbeeb8d5885') in 0.011880 seconds 
-  Import took 0.018013 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.015620 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.47 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.351 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.62 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2388 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 102.8 MB.
-System memory in use after: 103.0 MB.
-
-Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 2919.
-Total: 3.308400 ms (FindLiveObjects: 0.265400 ms CreateObjectMapping: 0.101200 ms MarkObjects: 2.926500 ms  DeleteObjects: 0.014500 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 186.233892 seconds.
-  path: Assets/nave 1.asset
-  artifactKey: Guid(52a3c1ab8aabb50419de454b3c1620ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/nave 1.asset using Guid(52a3c1ab8aabb50419de454b3c1620ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8819b350e2a4d864b53c0fb9a5389bf7') in 0.036529 seconds 
-  Import took 0.043163 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000530 seconds.
-  path: Assets/nave 3.asset
-  artifactKey: Guid(bcfd737f76b34bf42870fdf3f4059a77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/nave 3.asset using Guid(bcfd737f76b34bf42870fdf3f4059a77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0aa097d72cf749731953a4a211bea09f') in 0.008064 seconds 
-  Import took 0.013453 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000422 seconds.
-  path: Assets/nave 1.asset
-  artifactKey: Guid(52a3c1ab8aabb50419de454b3c1620ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/nave 1.asset using Guid(52a3c1ab8aabb50419de454b3c1620ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8819b350e2a4d864b53c0fb9a5389bf7') in 0.007719 seconds 
-  Import took 0.013097 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000391 seconds.
-  path: Assets/nave 2.asset
-  artifactKey: Guid(130947eba405b1f43ad3ddc8c09a50f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/nave 2.asset using Guid(130947eba405b1f43ad3ddc8c09a50f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e4312e54bc018fb09df3d67afeb10f1') in 0.017061 seconds 
-  Import took 0.022175 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 5.060310 seconds.
-  path: Assets/Prefab nave juego/Nave 3 la buena.prefab
-  artifactKey: Guid(f45a05160f01dcf44a1c577030a2cf7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab nave juego/Nave 3 la buena.prefab using Guid(f45a05160f01dcf44a1c577030a2cf7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '157c78d701665ab00e714387237be5e2') in 0.048924 seconds 
-  Import took 0.053938 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.006316 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.55 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.270 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.96 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2388 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 102.8 MB.
-System memory in use after: 103.0 MB.
-
-Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 2922.
-Total: 3.537900 ms (FindLiveObjects: 0.225300 ms CreateObjectMapping: 0.089800 ms MarkObjects: 3.167400 ms  DeleteObjects: 0.054400 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.008107 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.52 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.568 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.52 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2388 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 102.8 MB.
-System memory in use after: 103.0 MB.
-
-Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 2924.
-Total: 2.623000 ms (FindLiveObjects: 0.282600 ms CreateObjectMapping: 0.088500 ms MarkObjects: 2.237600 ms  DeleteObjects: 0.013700 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 111.423037 seconds.
-  path: Assets/Prefab Naves/Nave 1 la buena.prefab
-  artifactKey: Guid(9aff6da591aa7cb45a54eac1f270a68c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab Naves/Nave 1 la buena.prefab using Guid(9aff6da591aa7cb45a54eac1f270a68c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e62ae7a63788eae6f3b52d013b6d13f') in 0.091482 seconds 
-  Import took 0.096747 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000426 seconds.
-  path: Assets/Prefab Naves/Nave 2 la buena.prefab
-  artifactKey: Guid(3d7863c5cebb3d044941043ab6d0846e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab Naves/Nave 2 la buena.prefab using Guid(3d7863c5cebb3d044941043ab6d0846e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b4596088ca9c0d8645315e3736192110') in 0.014216 seconds 
-  Import took 0.019500 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000775 seconds.
-  path: Assets/Prefab Naves/Nave 3 la buena.prefab
-  artifactKey: Guid(422ac7768a1aac140b029cf4515b0a94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefab Naves/Nave 3 la buena.prefab using Guid(422ac7768a1aac140b029cf4515b0a94) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3ef9f12c799be9cdb82716c4e8fcafd9') in 0.019094 seconds 
-  Import took 0.027642 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 15.753723 seconds.
-  path: Assets/Scenes/SceneGame.unity
-  artifactKey: Guid(b909488cfcd6e4643bb831eb0282d271) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/SceneGame.unity using Guid(b909488cfcd6e4643bb831eb0282d271) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a3fdba7968f27aee2c560a55b99949d') in 0.005246 seconds 
-  Import took 0.010877 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 12.787787 seconds.
-  path: Assets/Scenes/SampleScene.unity
-  artifactKey: Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/SampleScene.unity using Guid(9fc0d4010bbf28b4594072e72b8655ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6334125491ba471f76363e06147d0816') in 0.006372 seconds 
-  Import took 0.013780 seconds .
-
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.007320 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.76 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.573 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.77 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2388 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 102.7 MB.
-System memory in use after: 102.9 MB.
-
-Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 2927.
-Total: 3.319500 ms (FindLiveObjects: 0.266300 ms CreateObjectMapping: 0.118900 ms MarkObjects: 2.874100 ms  DeleteObjects: 0.059000 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.010560 seconds.
-Begin MonoManager ReloadAssembly
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.99 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  1.686 seconds
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 0.77 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 2388 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 102.8 MB.
+System memory in use before: 102.9 MB.
 System memory in use after: 103.1 MB.
 
-Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 2929.
-Total: 5.177200 ms (FindLiveObjects: 0.259900 ms CreateObjectMapping: 0.109300 ms MarkObjects: 4.742600 ms  DeleteObjects: 0.064100 ms)
+Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 2909.
+Total: 3.363700 ms (FindLiveObjects: 0.227100 ms CreateObjectMapping: 0.117800 ms MarkObjects: 2.926900 ms  DeleteObjects: 0.090700 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -758,7 +154,53 @@ AssetImportParameters requested are different than current active one (requested
   custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 203.621615 seconds.
+  path: Assets/Prefab nave juego/Nave 1 la buena.prefab
+  artifactKey: Guid(1f5cc5c051d0b7f4d9afc18063300f4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab nave juego/Nave 1 la buena.prefab using Guid(1f5cc5c051d0b7f4d9afc18063300f4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '97b1b8d93b44743c1b8444e393a54082') in 0.061787 seconds 
+  Import took 0.066363 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.049050 seconds.
+  path: Assets/Prefab nave juego/Nave 1 la buena.prefab
+  artifactKey: Guid(1f5cc5c051d0b7f4d9afc18063300f4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefab nave juego/Nave 1 la buena.prefab using Guid(1f5cc5c051d0b7f4d9afc18063300f4a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ddf5b289afa6e7535b33db13f12bc31e') in 0.026658 seconds 
+  Import took 0.030906 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003874 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.52 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.141 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.53 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2389 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 103.0 MB.
+System memory in use after: 103.1 MB.
+
+Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 2912.
+Total: 2.748400 ms (FindLiveObjects: 0.211800 ms CreateObjectMapping: 0.108600 ms MarkObjects: 2.364200 ms  DeleteObjects: 0.062800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 

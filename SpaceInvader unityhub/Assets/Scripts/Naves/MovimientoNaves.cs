@@ -4,15 +4,19 @@ using UnityEngine;
 
 public class MovimientoNaves : MonoBehaviour
 {
-    public float speed1 = 3f;
+    public float speed1 = 3f; //Hacelo con instanciA  La instancia del GAME DATA PERSISTENT
 
     void Start()
     {
         Application.targetFrameRate = 30;
+       
     }
 
     void Update()
     {
+        
+
+
         //Vector3 myMove = Vector3.zero;  //Con esto no funcionaba pq no lo estaba aplicando. hay k aplicarlo al transform.  
         
         if(Input.GetKey(KeyCode.RightArrow))
