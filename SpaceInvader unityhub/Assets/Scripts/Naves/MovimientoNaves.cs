@@ -8,7 +8,9 @@ public class MovimientoNaves : MonoBehaviour
     Rigidbody rigidbody;
     public GameObject projectilePrefab;
 
-    void Start()
+    Vector2 lookDirection = new Vector2(1, 0);
+
+    void awake()
     {
         Application.targetFrameRate = 30;
         rigidbody = GetComponent<Rigidbody>();
@@ -55,7 +57,7 @@ public class MovimientoNaves : MonoBehaviour
 
     void Launch()
     {
-        /*GameObject projectileObject = Instantiate(projectilePrefab, rigidbody.position + Vector2.up * 0.5f, Quaternion.identity);
+       /* GameObject projectileObject = Instantiate(projectilePrefab, rigidbody.position + Vector2.up * 0.5f, Quaternion.identity);
 
         ProjectileNave projectile = projectileObject.GetComponent<ProjectileNave>();
         projectile.Launch(lookDirection, 300);*/

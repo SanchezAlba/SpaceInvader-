@@ -8,7 +8,7 @@ public class EnemyController : MonoBehaviour
     public bool vertical;
     public float changeTime = 3.0f;
 
-    Rigidbody rigidbody2D;
+    Rigidbody rigidbody;
     float timer;
     int direction = 1;
     bool broken = true;
@@ -17,7 +17,7 @@ public class EnemyController : MonoBehaviour
 
     void Start()
     {
-        rigidbody2D = GetComponent<Rigidbody>();
+        rigidbody = GetComponent<Rigidbody>();
         timer = changeTime;
         animator = GetComponent<Animator>();
     }
@@ -40,7 +40,7 @@ public class EnemyController : MonoBehaviour
         }
 
 
-        Vector2 position = rigidbody2D.position;
+        Vector2 position = rigidbody.position;
 
         if (vertical)
         {
@@ -55,7 +55,7 @@ public class EnemyController : MonoBehaviour
             animator.SetFloat("Move Y", 0);
         }
 
-        rigidbody2D.MovePosition(position);
+        rigidbody.MovePosition(position);
     }
 
     void OnCollisionEnter2D(Collision2D other)
