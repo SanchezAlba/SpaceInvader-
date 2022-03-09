@@ -32,8 +32,16 @@ public class ProjectileNave : MonoBehaviour
             
         }*/
 
-        Destroy(gameObject);
+        Destroy(gameObject); //Para que el proyectil al chocarse se elimine
+
+    
     }
 
-
+    /*private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.tag=="Marcianos")
+        {
+            gameObject.SetActive(false);
+        }
+    }*/
 }

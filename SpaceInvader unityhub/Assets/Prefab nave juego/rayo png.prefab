@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 2716417055150392870}
   m_Layer: 12
   m_Name: rayo png
-  m_TagString: Untagged
+  m_TagString: Rayo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

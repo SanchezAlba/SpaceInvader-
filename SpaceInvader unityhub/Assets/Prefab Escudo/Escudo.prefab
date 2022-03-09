@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &5824978518447983221
+--- !u!1 &5876920350771674257
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,47 +8,46 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 6601621423258587343}
-  - component: {fileID: 7796417189365473130}
-  - component: {fileID: 5464704085300095904}
-  - component: {fileID: 9021568764877978334}
-  - component: {fileID: 1445563795479282046}
-  m_Layer: 10
-  m_Name: marciano 2
-  m_TagString: Marcianos
+  - component: {fileID: 6540584862417561131}
+  - component: {fileID: 7884405271311493518}
+  - component: {fileID: 5372793925145582916}
+  - component: {fileID: 3964666636018475620}
+  m_Layer: 0
+  m_Name: Escudo
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &6601621423258587343
+--- !u!4 &6540584862417561131
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5824978518447983221}
-  m_LocalRotation: {x: 0.000000021855694, y: 0, z: -0, w: 1}
-  m_LocalPosition: {x: -72.319, y: 17.8909, z: 22.013}
-  m_LocalScale: {x: 325.7971, y: 325.7971, z: 325.7971}
+  m_GameObject: {fileID: 5876920350771674257}
+  m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
+  m_LocalPosition: {x: -8.3911, y: 1.5989, z: 7.64}
+  m_LocalScale: {x: 24.369518, y: 58.777588, z: 24.369518}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &7796417189365473130
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
+--- !u!33 &7884405271311493518
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5824978518447983221}
-  m_Mesh: {fileID: 6416302070336371891, guid: c72d93bdd41bd3740a6069994f84b669, type: 3}
---- !u!23 &5464704085300095904
+  m_GameObject: {fileID: 5876920350771674257}
+  m_Mesh: {fileID: -4983002345438293258, guid: e74c785f3bd062c48a0597e3335cd6f0, type: 3}
+--- !u!23 &5372793925145582916
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5824978518447983221}
+  m_GameObject: {fileID: 5876920350771674257}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -61,7 +60,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 430853708392154203, guid: c72d93bdd41bd3740a6069994f84b669, type: 3}
+  - {fileID: 7004774350301918988, guid: e74c785f3bd062c48a0597e3335cd6f0, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -83,41 +82,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!50 &9021568764877978334
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5824978518447983221}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 0
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 6
---- !u!61 &1445563795479282046
+--- !u!61 &3964666636018475620
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5824978518447983221}
+  m_GameObject: {fileID: 5876920350771674257}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.01848049, y: -6.5655906e-17}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -128,5 +106,5 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.019999998, y: 0.019999998}
+  m_Size: {x: 0.036864005, y: 0.029319054}
   m_EdgeRadius: 0

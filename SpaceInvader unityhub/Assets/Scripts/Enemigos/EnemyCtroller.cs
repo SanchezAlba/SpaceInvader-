@@ -29,8 +29,6 @@ public class EnemyCtroller : MonoBehaviour
                     Debug.Log(enemiesList[x].enemies[y].name);  //para ver que los comprueba uno a uno
                 }
 
-
-
             }
         }
     }
@@ -73,4 +71,19 @@ public class EnemyCtroller : MonoBehaviour
             PrintArray();
         }
     }
+
+  
+    ///////////// INTENTAR OCULTAR EL MARCIANO AL DARLE EL RAYO
+    ///
+    /*private void OnTriggerEnter(Collider other)  //
+    {
+        if (other.tag == "Rayo")  //para que solo la pueda coger el objeto con el tag PLAYER
+        {
+            gameObject.SetActive(false); //la moneda desaparece
+           
+        }
+
+    }*/
+
+
 }

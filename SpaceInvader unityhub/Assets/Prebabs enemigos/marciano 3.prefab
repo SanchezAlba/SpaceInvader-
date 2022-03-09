@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 2769765951454899312}
   m_Layer: 10
   m_Name: marciano 3
-  m_TagString: Untagged
+  m_TagString: Marcianos
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
