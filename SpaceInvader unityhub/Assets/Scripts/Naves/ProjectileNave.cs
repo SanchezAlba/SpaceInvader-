@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class ProjectileNave : MonoBehaviour
 {
-    Rigidbody rigidbody;
+    Rigidbody2D rigidbody;
 
     void Awake()
     {
-        rigidbody = GetComponent<Rigidbody>();
+        rigidbody = GetComponent<Rigidbody2D>();
     }
 
     public void Launch(Vector2 direction, float force)
@@ -26,10 +26,10 @@ public class ProjectileNave : MonoBehaviour
 
     /*void OnCollisionEnter2D(Collision2D other)
     {
-       /* EnemyController e = other.collider.GetComponent<EnemyController>();
+       EnemyController e = other.collider.GetComponent<EnemyController>();
         if (e != null)
         {
-            e.Fix();
+            
         }
 
         Destroy(gameObject);
