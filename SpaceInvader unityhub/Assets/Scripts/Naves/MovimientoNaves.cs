@@ -72,7 +72,7 @@ public class MovimientoNaves : MonoBehaviour
         GameObject projectileObject = Instantiate(projectilePrefab, rigidbody.position + Vector2.up * 0.5f, Quaternion.identity);  //PREGUNTAR: creo que el instantiate es para que la tuerca se mueva con la nave. osea va copiando el chisme en las distintas posiciones
 
         ProjectileNave projectile = projectileObject.GetComponent<ProjectileNave>();
-        projectile.Launch(lookDirection, 300);
+        projectile.Launch(Vector2.up, 300);
 
         
         

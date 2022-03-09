@@ -11,9 +11,9 @@ public class ProjectileNave : MonoBehaviour
         rigidbody = GetComponent<Rigidbody2D>();
     }
 
-    public void Launch(Vector2 direction, float force)
+    public void Launch(Vector2 up, float force)
     {
-        rigidbody.AddForce(direction * force);
+        rigidbody.AddForce(up * force);
     }
 
     void Update()
@@ -24,16 +24,16 @@ public class ProjectileNave : MonoBehaviour
         }
     }
 
-    /*void OnCollisionEnter2D(Collision2D other)
+    void OnCollisionEnter2D(Collision2D other)
     {
-       EnemyController e = other.collider.GetComponent<EnemyController>();
+       /*EnemyController e = other.collider.GetComponent<EnemyController>();
         if (e != null)
         {
             
-        }
+        }*/
 
         Destroy(gameObject);
-    }*/
+    }
 
 
 }

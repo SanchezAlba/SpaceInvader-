@@ -68,7 +68,8 @@ public class EnemyCtroller : MonoBehaviour
                 }
             }
 
-            enemiesList[lastx].enemies[enemiesList[lastx].enemies.Length - 1].SetActive(true);
+            //enemiesList[lastx].enemies[enemiesList[lastx].enemies.Length - 1].SetActive(true);
+            enemiesList[lastx].enemies[lastY].SetActive(false);
             PrintArray();
         }
     }
