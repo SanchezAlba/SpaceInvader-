@@ -24,7 +24,7 @@ public class ProjectileNave : MonoBehaviour
         }
     }
 
-    void OnCollisionEnter2D(Collision2D other)
+    /*void OnCollisionEnter2D(Collision2D other)
     {
        /* EnemyController e = other.collider.GetComponent<EnemyController>();
         if (e != null)
@@ -32,8 +32,8 @@ public class ProjectileNave : MonoBehaviour
             e.Fix();
         }
 
-        Destroy(gameObject);*/
-    }
+        Destroy(gameObject);
+    }*/
 
 
 }
