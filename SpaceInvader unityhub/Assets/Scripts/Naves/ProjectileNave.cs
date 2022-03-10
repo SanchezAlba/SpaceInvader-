@@ -30,7 +30,12 @@ public class ProjectileNave : MonoBehaviour
         {
             other.gameObject.SetActive(false);  //Desactivar enemigos
         }
-        
+
+        if (other.gameObject.tag == "Escudos")
+        {
+            other.gameObject.SetActive(false);  //Desactivar Escudos
+        }
+
         Destroy(gameObject); //Para que el proyectil al chocarse se elimine
 
     }
