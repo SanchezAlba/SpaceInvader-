@@ -72,18 +72,26 @@ public class EnemyCtroller : MonoBehaviour
         }
     }
 
-  
-    ///////////// INTENTAR OCULTAR EL MARCIANO AL DARLE EL RAYO
+
+    ///////////// OCULTAR EL MARCIANO AL DARLE EL RAYO
     ///
     /*private void OnTriggerEnter(Collider other)  //
     {
         if (other.tag == "Rayo")  //para que solo la pueda coger el objeto con el tag PLAYER
         {
-            gameObject.SetActive(false); //la moneda desaparece
+            gameObject.SetActive(false); //El marciano desaparece
            
         }
 
     }*/
 
+   /* void OnCollisionEnter2D(Collision2D other)
+    {
+       if(other.tag=="Rayo")
+            {
+            gameObject.SetActive(false);
+        }
+
+    }*/
 
 }

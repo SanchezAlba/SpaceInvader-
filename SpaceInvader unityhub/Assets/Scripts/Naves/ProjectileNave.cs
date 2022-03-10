@@ -26,22 +26,13 @@ public class ProjectileNave : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D other)
     {
-       /*EnemyController e = other.collider.GetComponent<EnemyController>();
-        if (e != null)
+        if (other.gameObject.tag == "Marcianos") 
         {
-            
-        }*/
-
+            other.gameObject.SetActive(false);  //Desactivar enemigos
+        }
+        
         Destroy(gameObject); //Para que el proyectil al chocarse se elimine
 
-    
     }
 
-    /*private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if(collision.tag=="Marcianos")
-        {
-            gameObject.SetActive(false);
-        }
-    }*/
 }
