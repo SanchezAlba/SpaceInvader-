@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spaceshipName: Odyssey
   shield: 3
-  speed: 4
+  speed: 3
   heat: 1
   prefab: {fileID: 8915890144783306545, guid: f45a05160f01dcf44a1c577030a2cf7f, type: 3}

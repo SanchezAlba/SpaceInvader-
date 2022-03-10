@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 8464960552437517933}
   - component: {fileID: 5953023735528913575}
   - component: {fileID: -5899892187409203364}
+  - component: {fileID: -8532224790575912836}
   m_Layer: 0
   m_Name: Escudo 2
   m_TagString: Escudos
@@ -108,3 +109,21 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.0039346395, y: 0.018384958}
   m_EdgeRadius: 0
+--- !u!114 &-8532224790575912836
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5304571841615289202}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 559582ad7bbaa4f47b294134a019062d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  collisionCount: 0
+  escudo1: {fileID: 8042402354423886920, guid: 7c42a54a17afcbe40a126c45e1ad7014, type: 3}
+  escudo2: {fileID: 5304571841615289202}
+  escudo3: {fileID: 5347771270435983797, guid: b8b4d70d5b6f9664281d30480e86b47c, type: 3}
+  escudo4: {fileID: 4733055744535032593, guid: 3c14dafedbcafdd41be3472c96bb135b, type: 3}
+  escudo5: {fileID: 6031660884151510512, guid: bd96ef8d9210492498b95315bc27037b, type: 3}
