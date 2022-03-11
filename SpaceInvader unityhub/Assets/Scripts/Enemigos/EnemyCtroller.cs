@@ -19,7 +19,7 @@ public class EnemyCtroller : MonoBehaviour
 
     private void Start()
     {
-        //columna = Random.Range(20, 170);
+        columna = UnityEngine.Random.Range(20, 170);
         PrintArray();
        
     }
@@ -44,7 +44,6 @@ public class EnemyCtroller : MonoBehaviour
     private void Update()
     {
        
-
         if (Input.GetKeyUp(KeyCode.Space))
         {
             //cuando encuentre a alguien descatvado para la busqueda ->
@@ -89,6 +88,8 @@ public class EnemyCtroller : MonoBehaviour
                 {
 
                    
+
+
 
 
                 }
