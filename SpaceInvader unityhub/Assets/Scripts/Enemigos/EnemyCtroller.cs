@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System;
+using UnityEngine.UI;
 
 public class EnemyCtroller : MonoBehaviour
 {
@@ -12,9 +13,15 @@ public class EnemyCtroller : MonoBehaviour
     }
     public EnemiesList[] enemiesList;
 
+    public int columna;  //Ir mirando por culumnas. y de ahi num aleartorio
+
+    Rigidbody2D rigidbody;
+
     private void Start()
     {
+        //columna = Random.Range(20, 170);
         PrintArray();
+       
     }
 
     void PrintArray()
@@ -36,7 +43,9 @@ public class EnemyCtroller : MonoBehaviour
 
     private void Update()
     {
-        if(Input.GetKeyUp(KeyCode.Space))
+       
+
+        if (Input.GetKeyUp(KeyCode.Space))
         {
             //cuando encuentre a alguien descatvado para la busqueda ->
             int lastx = enemiesList.Length-1; //lo ult activo
@@ -70,7 +79,28 @@ public class EnemyCtroller : MonoBehaviour
             enemiesList[lastx].enemies[lastY].SetActive(false);
             PrintArray();
         }
+
+        ////////////////////////////////// DISPARO ENEMIGOS
+        for (int x = 0; x < enemiesList.Length; x++)
+        {
+            for (int y = 0; y < enemiesList[x].enemies.Length; y++)
+            {
+                if (enemiesList[x].enemies[y].activeSelf == false) //este para la busqueda
+                {
+
+                   
+
+
+                }
+            }
+
+        }
+
     }
 
+    public void Disparar(Vector2 up, float force)
+    {
+        rigidbody.AddForce( Vector2.down* force);
 
+    }
 }

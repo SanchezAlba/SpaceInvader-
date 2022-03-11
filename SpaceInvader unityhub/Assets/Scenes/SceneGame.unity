@@ -3570,34 +3570,41 @@ MonoBehaviour:
   enemiesList:
   - enemies:
     - {fileID: 1557674924}
-    - {fileID: 109042171}
-    - {fileID: 1981807971}
-    - {fileID: 616051334}
-    - {fileID: 46878824}
-    - {fileID: 233824151}
-    - {fileID: 880126140}
-    - {fileID: 2056332032}
-    - {fileID: 1824720144}
-  - enemies:
     - {fileID: 1870713981}
-    - {fileID: 7688294}
-    - {fileID: 935114955}
-    - {fileID: 1939392889}
-    - {fileID: 897090375}
-    - {fileID: 1336080098}
-    - {fileID: 246498746}
-    - {fileID: 1884821189}
-    - {fileID: 118152650}
-  - enemies:
     - {fileID: 1331387532}
+  - enemies:
+    - {fileID: 109042171}
+    - {fileID: 7688294}
     - {fileID: 995480492}
+  - enemies:
+    - {fileID: 1981807971}
+    - {fileID: 935114955}
     - {fileID: 57336158}
+  - enemies:
+    - {fileID: 616051334}
+    - {fileID: 1939392889}
     - {fileID: 1022894190}
+  - enemies:
+    - {fileID: 46878824}
+    - {fileID: 897090375}
     - {fileID: 577673612}
+  - enemies:
+    - {fileID: 233824151}
+    - {fileID: 1336080098}
     - {fileID: 2007306968}
+  - enemies:
+    - {fileID: 880126140}
+    - {fileID: 246498746}
     - {fileID: 186649021}
+  - enemies:
+    - {fileID: 2056332032}
+    - {fileID: 1884821189}
     - {fileID: 248578714}
+  - enemies:
+    - {fileID: 1824720144}
+    - {fileID: 118152650}
     - {fileID: 825386961}
+  columna: 0
 --- !u!1 &1824720144 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1824964350173067027, guid: 7fbd0826d9d8e7649b312d85f2048632, type: 3}
