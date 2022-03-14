@@ -16,9 +16,14 @@ public class EnemyCtroller : MonoBehaviour
     public int columna;  //Ir mirando por culumnas. y de ahi num aleartorio
 
     Rigidbody2D rigidbody;
+    public GameObject disparoPrefab;
+    Vector2 disparo = new Vector2(1, 0);
+
 
     private void Start()
     {
+        Application.targetFrameRate = 30;
+        rigidbody = GetComponent<Rigidbody2D>();
         columna = UnityEngine.Random.Range(20, 170);
         PrintArray();
        
@@ -108,5 +113,12 @@ public class EnemyCtroller : MonoBehaviour
         columnaAttack[row].GetComponent<EnemyAttack>().Attack(); //Del otro script, con la funcion de disparar  /////// Le dice cual es la columan y con row el k va a disparar
     }
 
+   /*void Ataque()
+    {
+        GameObject projectileObject = Instantiate(disparoPrefab, rigidbody.position + Vector2.up * 0.5f, Quaternion.identity);  // creo que el instantiate es para que el proyectil se mueva con la nave. osea va copiando el chisme en las distintas posiciones
+
+        EnemyAttack projectile = projectileObject.GetComponent<EnemyAttack>();
+        projectile.Attack(Vector2.up, 300);
+    }*/
    
 }

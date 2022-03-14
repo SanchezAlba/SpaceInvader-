@@ -1,14 +1,22 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class ProjectileNave : MonoBehaviour
 {
     Rigidbody2D rigidbody;
+    int valorMarcinos = 1;
+
+    
 
     void Awake()
     {
         rigidbody = GetComponent<Rigidbody2D>();
+    }
+    private void Start()
+    {
+    
     }
 
     public void Launch(Vector2 up, float force)
@@ -28,7 +36,10 @@ public class ProjectileNave : MonoBehaviour
     {
         if (other.gameObject.tag == "Marcianos") 
         {
-            other.gameObject.SetActive(false);  //Desactivar enemigos
+         other.gameObject.SetActive(false);  //Desactivar enemigos
+                                             // GetComponent<PlayerPoints>().AddPoints();
+
+
         }
 
         if (other.gameObject.tag == "Escudos")
@@ -36,8 +47,9 @@ public class ProjectileNave : MonoBehaviour
             other.gameObject.SetActive(false);  //Desactivar Escudos
         }
 
-        Destroy(gameObject); //Para que el proyectil al chocarse se elimine
+        
 
+        Destroy(gameObject); //Para que el proyectil al chocarse se elimine
     }
 
 }

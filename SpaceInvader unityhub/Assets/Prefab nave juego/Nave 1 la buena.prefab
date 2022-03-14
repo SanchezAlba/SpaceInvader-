@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 4422408141761335588}
   m_Layer: 11
   m_Name: Nave 1 la buena
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -98,7 +98,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94cd9e59e948ebb4cbbd3dddfca43056, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speedDisparo: 9
   projectilePrefab: {fileID: 7085908441691298501, guid: a574957747a8bcc4fac310e15efab5b1, type: 3}
   boolDisparos: 0
 --- !u!50 &620099789847334572
