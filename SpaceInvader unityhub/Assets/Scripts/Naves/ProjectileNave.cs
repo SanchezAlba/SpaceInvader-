@@ -32,13 +32,16 @@ public class ProjectileNave : MonoBehaviour
         }
     }
 
+   
+
     void OnCollisionEnter2D(Collision2D other)
     {
         if (other.gameObject.tag == "Marcianos") 
         {
          other.gameObject.SetActive(false);  //Desactivar enemigos
-                                             // GetComponent<PlayerPoints>().AddPoints();
 
+
+           // PlayerPoints.instance.AddPoints(valorMarcinos);
 
         }
 

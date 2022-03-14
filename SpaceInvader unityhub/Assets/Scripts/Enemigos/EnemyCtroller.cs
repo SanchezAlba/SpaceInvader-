@@ -16,7 +16,9 @@ public class EnemyCtroller : MonoBehaviour
     public int columna;  //Ir mirando por culumnas. y de ahi num aleartorio
 
     Rigidbody2D rigidbody;
+
     public GameObject disparoPrefab;
+
     Vector2 disparo = new Vector2(1, 0);
 
 

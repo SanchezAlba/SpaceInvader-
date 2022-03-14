@@ -8,13 +8,15 @@ public class PlayerPoints : MonoBehaviour
     int puntosActuales = 0;
     public TextMeshProUGUI labelPuntos;
 
+    public static PlayerPoints instance;
+
     void Start()
     {
         labelPuntos.text = "Points";
     }
 
 
-    public void AddPoints()
+    public void AddPoints(int cantidadObtenida)
     {
         puntosActuales += 1;
         labelPuntos.text = puntosActuales.ToString();

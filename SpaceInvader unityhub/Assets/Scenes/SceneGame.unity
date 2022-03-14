@@ -1185,6 +1185,50 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 6850792770399119792, guid: 781c46fc5646d3e47bf704d88948ccf0, type: 3}
   m_PrefabInstance: {fileID: 109227254}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &602788152
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 602788154}
+  - component: {fileID: 602788153}
+  m_Layer: 0
+  m_Name: G.O Points
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &602788153
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 602788152}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a39e7dc93230ef4b86b86bb0753157b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  labelPuntos: {fileID: 814005638}
+--- !u!4 &602788154
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 602788152}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.8762009, y: 1.1166626, z: 271.24762}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &616051334 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1824964350173067027, guid: 7fbd0826d9d8e7649b312d85f2048632, type: 3}
