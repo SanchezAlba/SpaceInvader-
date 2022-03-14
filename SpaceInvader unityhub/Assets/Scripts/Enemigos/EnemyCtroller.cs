@@ -79,29 +79,34 @@ public class EnemyCtroller : MonoBehaviour
             PrintArray();
         }
 
-        ////////////////////////////////// DISPARO ENEMIGOS
-        for (int x = 0; x < enemiesList.Length; x++)
+       
+
+    }
+
+
+    ///////////// DISPARO ENEMIGOS
+    void Attack()
+    {
+        //Selec columna
+        int randomCol = UnityEngine.Random.Range(0, enemiesList.Length);  //Para que dispare de forma aleatoria
+
+        //Buscar en la columna
+        GameObject[] columnaAttack = enemiesList[randomCol].enemies;
+
+
+        //Si esta activo es el ultimo. Me actualiza la Y
+        int row = 0;
+        for(int y=0;y< columnaAttack.Length;y++)  //columan attack aisla el numero que eligio de las listas en el inspector
         {
-            for (int y = 0; y < enemiesList[x].enemies.Length; y++)
+            if(columnaAttack[y].activeSelf == true)
             {
-                if (enemiesList[x].enemies[y].activeSelf == false) //este para la busqueda
-                {
-
-                   
-
-
-
-
-                }
+                row = y; // saca el numero, (el ultimo, el ek va a disparar)
             }
-
         }
 
+        //Llamamos a atacar
+        columnaAttack[row].GetComponent<EnemyAttack>().Attack(); //Del otro script, con la funcion de disparar  /////// Le dice cual es la columan y con row el k va a disparar
     }
 
-    public void Disparar(Vector2 up, float force)
-    {
-        rigidbody.AddForce( Vector2.down* force);
-
-    }
+   
 }
