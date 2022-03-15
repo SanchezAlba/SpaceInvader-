@@ -15,20 +15,15 @@ public class EnemyCtroller : MonoBehaviour
 
     public int columna;  //Ir mirando por culumnas. y de ahi num aleartorio
 
-    Rigidbody2D rigidbody;
 
-    public GameObject disparoPrefab;
-
-    Vector2 disparo = new Vector2(1, 0);
+    //Variables de ataque
+    float timeEnemigo;
+    bool disparoEnemigo = false;
 
 
     private void Start()
     {
-        Application.targetFrameRate = 30;
-        rigidbody = GetComponent<Rigidbody2D>();
-        columna = UnityEngine.Random.Range(20, 170);
         PrintArray();
-       
     }
 
     void PrintArray()
@@ -50,7 +45,20 @@ public class EnemyCtroller : MonoBehaviour
 
     private void Update()
     {
-       
+        timeEnemigo -= Time.deltaTime;
+        if(timeEnemigo <=0)
+        {
+            disparoEnemigo = true;
+            Attack();
+        }
+        if(disparoEnemigo == true)
+        {
+            timeEnemigo = 5f;
+            disparoEnemigo = false;
+        }
+
+
+        // /////////////////////  lo de clase, k al darle al espacio se borrase el ult enemigo
         if (Input.GetKeyUp(KeyCode.Space))
         {
             //cuando encuentre a alguien descatvado para la busqueda ->
@@ -92,7 +100,7 @@ public class EnemyCtroller : MonoBehaviour
 
 
     ///////////// DISPARO ENEMIGOS
-    void Attack()
+    public void Attack()
     {
         //Selec columna
         int randomCol = UnityEngine.Random.Range(0, enemiesList.Length);  //Para que dispare de forma aleatoria
@@ -115,12 +123,4 @@ public class EnemyCtroller : MonoBehaviour
         columnaAttack[row].GetComponent<EnemyAttack>().Attack(); //Del otro script, con la funcion de disparar  /////// Le dice cual es la columan y con row el k va a disparar
     }
 
-   /*void Ataque()
-    {
-        GameObject projectileObject = Instantiate(disparoPrefab, rigidbody.position + Vector2.up * 0.5f, Quaternion.identity);  // creo que el instantiate es para que el proyectil se mueva con la nave. osea va copiando el chisme en las distintas posiciones
-
-        EnemyAttack projectile = projectileObject.GetComponent<EnemyAttack>();
-        projectile.Attack(Vector2.up, 300);
-    }*/
-   
 }

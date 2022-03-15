@@ -51,7 +51,6 @@ public class ProjectileNave : MonoBehaviour
         }
 
         
-
         Destroy(gameObject); //Para que el proyectil al chocarse se elimine
     }
 

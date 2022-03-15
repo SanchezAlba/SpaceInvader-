@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 5464704085300095904}
   - component: {fileID: 9021568764877978334}
   - component: {fileID: 1445563795479282046}
+  - component: {fileID: 5364043660916892976}
   m_Layer: 10
   m_Name: marciano 2
   m_TagString: Marcianos
@@ -130,3 +131,16 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.019999998, y: 0.019999998}
   m_EdgeRadius: 0
+--- !u!114 &5364043660916892976
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5824978518447983221}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34ae67d719566f740a14bf44a11645c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  balaEnemigo: {fileID: 5534978903054154771, guid: d27dbf7943491e142818557917a4286c, type: 3}

@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 1238337662568219316}
   m_Layer: 11
   m_Name: Nave 3 la buena
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
