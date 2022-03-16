@@ -54,7 +54,7 @@ public class EnemyCtroller : MonoBehaviour
         }
         if(disparoEnemigo == true)
         {
-            timeEnemigo = 3f;
+            timeEnemigo = 2f;
             disparoEnemigo = false;
         }
 
@@ -63,7 +63,7 @@ public class EnemyCtroller : MonoBehaviour
        //if (Input.GetKeyUp(KeyCode.Space))
         //{
             //cuando encuentre a alguien descatvado para la busqueda ->
-            int lastx = enemiesList.Length-1; //lo ult activo
+            /*int lastx = enemiesList.Length-1; //lo ult activo
             int lastY = enemiesList[lastx].enemies.Length-1;
             bool foundLastActive = false; //saber si esta activo 
                                           //Aqui nuevo bucle que calcula ult. X e Y
@@ -93,7 +93,7 @@ public class EnemyCtroller : MonoBehaviour
             //enemiesList[lastx].enemies[enemiesList[lastx].enemies.Length - 1].SetActive(true);
             enemiesList[lastx].enemies[lastY].SetActive(false); //ult x Y se vuelve falso al pulsar espacio
             PrintArray();
-       // }
+       // }*/
 
        
 

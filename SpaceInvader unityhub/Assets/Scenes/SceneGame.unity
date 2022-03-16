@@ -972,7 +972,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &455348394
 PrefabInstance:
@@ -1247,7 +1247,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &616051334 stripped
 GameObject:
@@ -1520,6 +1520,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4842553789653911530, guid: 7fbd0826d9d8e7649b312d85f2048632, type: 3}
+      propertyPath: m_Constraints
+      value: 4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7fbd0826d9d8e7649b312d85f2048632, type: 3}
 --- !u!4 &779894524 stripped
@@ -1756,7 +1760,7 @@ GameObject:
   - component: {fileID: 864495159}
   m_Layer: 0
   m_Name: Barrera  (1)
-  m_TagString: Untagged
+  m_TagString: Barrera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1799,7 +1803,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &880126140 stripped
 GameObject:
@@ -2191,7 +2195,7 @@ GameObject:
   - component: {fileID: 1041149203}
   m_Layer: 0
   m_Name: 'Barrera '
-  m_TagString: Untagged
+  m_TagString: Barrera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2234,7 +2238,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1070701677
 GameObject:
@@ -2277,7 +2281,7 @@ Transform:
   m_LocalScale: {x: 541, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1085585619
 PrefabInstance:
@@ -3624,6 +3628,7 @@ GameObject:
   - component: {fileID: 1810478681}
   - component: {fileID: 1810478682}
   - component: {fileID: 1810478683}
+  - component: {fileID: 1810478684}
   m_Layer: 0
   m_Name: Enemigos
   m_TagString: Untagged
@@ -3743,6 +3748,18 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &1810478684
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1810478680}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e6ecd17ab93bbd34aa3c33b9ec4432b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1824720144 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1824964350173067027, guid: 7fbd0826d9d8e7649b312d85f2048632, type: 3}
@@ -4498,7 +4515,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1998739493
 PrefabInstance:
@@ -4509,7 +4526,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: fe09025822a0e4d44921e3b620e381d6, type: 3}
       propertyPath: m_RootOrder
-      value: 13
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: fe09025822a0e4d44921e3b620e381d6, type: 3}
       propertyPath: m_LocalScale.x
@@ -4836,7 +4853,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2132148316
 PrefabInstance:
