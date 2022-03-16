@@ -5,36 +5,47 @@ using UnityEngine;
 public class MoviminetoEnemigo : MonoBehaviour
 {
 
-    private float speedBall = 8.0f;
+    private float speed = 8.0f;
     Vector3 movHorizontal = Vector3.right;
-    Vector3 movVertical = Vector3.up;
+    Vector3 movVertical = Vector3.down;
 
     public static MoviminetoEnemigo instance;
 
-  
-    private void Update()
+    void Start()
     {
-        transform.position += (movHorizontal) * Time.deltaTime * speedBall;
-
-        //Para k baje
-        //timer += Time.deltaTime;
-        /*if(timer > timeToMove)
+        if (MoviminetoEnemigo.instance == null)
         {
-            transform.Translate(new Vector2(0, -1));
-            numOfMovements = -1;
-            speed = -speed;
-            timer = 0;
-        }*/
+            MoviminetoEnemigo.instance = this;
+        }
 
+        else
+        {
+            Destroy(this);
+        }
 
+    }
+
+    void Update()
+    {
+        transform.position += (movHorizontal) * Time.deltaTime * speed;
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.tag == "Barrera")  //Cuando colisiona, el game object con ese tag, hará tal cosa
         {
+
             movHorizontal = -movHorizontal;
         }
+
+
+        /*if (collision.gameObject.tag == "Barrera")
+        {
+            movHorizontal = -movHorizontal;
+            movVertical = -movVertical;
+
+
+        }*/
 
     }
 

@@ -28,7 +28,7 @@ public class ProjectileNave : MonoBehaviour
     {
         if (transform.position.magnitude > 1000.0f)
         {
-            Destroy(gameObject);
+            gameObject.SetActive(false);
         }
     }
 

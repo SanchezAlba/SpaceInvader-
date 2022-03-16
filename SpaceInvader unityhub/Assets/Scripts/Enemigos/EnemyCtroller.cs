@@ -20,6 +20,13 @@ public class EnemyCtroller : MonoBehaviour
     float timeEnemigo;
     bool disparoEnemigo = false;
 
+    //Variables nave nodriza
+    Vector2 naveNodrizaPos = new Vector2(33f, 16.45f);
+    public GameObject naveNodriza;
+    float timerNaveNodriza = 10;
+    float timerNodrizaMin = 10;
+    float timerNodrizaMax = 20;
+
 
     private void awake()
     {
@@ -47,6 +54,14 @@ public class EnemyCtroller : MonoBehaviour
     private void Update()
     {
         timeEnemigo -= Time.deltaTime;
+        timerNaveNodriza -= Time.deltaTime;
+
+        // Nave nodriza
+        if (timerNaveNodriza <= 0)
+        {
+            SpawnNaveNodriza(); 
+        }
+
         if(timeEnemigo <=0)
         {
             disparoEnemigo = true;
@@ -99,7 +114,16 @@ public class EnemyCtroller : MonoBehaviour
 
     }
 
+    //Mov nave nodriza
+    public void SpawnNaveNodriza()
+    {
+        Instantiate(naveNodriza, naveNodrizaPos, Quaternion.identity);
+        timerNaveNodriza = UnityEngine.Random.Range(timerNodrizaMin, timerNodrizaMax); //El tiempo de nave nodriza es = a un numero aleatorio entre num min y max
 
+        naveNodriza.SetActive(true);
+        naveNodriza.transform.localPosition = new Vector2(9f, 5.18f);
+    }
+            
     ///////////// DISPARO ENEMIGOS
     public void Attack()
     {
@@ -112,7 +136,7 @@ public class EnemyCtroller : MonoBehaviour
 
         //Si esta activo es el ultimo. Me actualiza la Y
         int row = 0;
-        for(int y=0;y< columnaAttack.Length;y++)  //columan attack aisla el numero que eligio de las listas en el inspector
+        for(int y=0;y< columnaAttack.Length;y++)  //columan attack aisla el numero que elijo de las listas en el inspector
         {
             if(columnaAttack[y].activeSelf == true)
             {
