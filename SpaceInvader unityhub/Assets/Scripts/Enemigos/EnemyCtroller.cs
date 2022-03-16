@@ -21,7 +21,7 @@ public class EnemyCtroller : MonoBehaviour
     bool disparoEnemigo = false;
 
 
-    private void Start()
+    private void awake()
     {
         PrintArray();
     }
@@ -37,6 +37,7 @@ public class EnemyCtroller : MonoBehaviour
                 {
                     Debug.Log(enemiesList[x].enemies[y].name);  //para ver que los comprueba uno a uno
                 }
+
 
             }
         }
@@ -59,8 +60,8 @@ public class EnemyCtroller : MonoBehaviour
 
 
         // /////////////////////  lo de clase, k al darle al espacio se borrase el ult enemigo
-       /* if (Input.GetKeyUp(KeyCode.Space))
-        {
+       //if (Input.GetKeyUp(KeyCode.Space))
+        //{
             //cuando encuentre a alguien descatvado para la busqueda ->
             int lastx = enemiesList.Length-1; //lo ult activo
             int lastY = enemiesList[lastx].enemies.Length-1;
@@ -75,14 +76,14 @@ public class EnemyCtroller : MonoBehaviour
                     if (enemiesList[x].enemies[y].activeSelf == false && foundLastActive ==false) //este para la busqueda
                     {
 
-                        foundLastActive = true;
+                        foundLastActive = true; //encontre al ultimo, que esta muerto y paar de buscar
 
                         Debug.Log(enemiesList[x].enemies[y].name);  //para ver que los comprueba uno a uno
                     }
 
-                    else if(enemiesList[x].enemies[y].activeSelf ==true && foundLastActive == false) //Dice cual es el ultimo activo
+                    else if(enemiesList[x].enemies[y].activeSelf ==true && foundLastActive == false) //Dice cual es el ultimo activo _ todo esta activo, y no encontyro al ultimo
                     {
-                        lastx = x;
+                        lastx = x; //establece como ultimo a la ultima x y ulti Y
                         lastY = y;
                     }
 
@@ -90,9 +91,9 @@ public class EnemyCtroller : MonoBehaviour
             }
 
             //enemiesList[lastx].enemies[enemiesList[lastx].enemies.Length - 1].SetActive(true);
-            enemiesList[lastx].enemies[lastY].SetActive(false);
+            enemiesList[lastx].enemies[lastY].SetActive(false); //ult x Y se vuelve falso al pulsar espacio
             PrintArray();
-        }*/
+       // }
 
        
 
@@ -122,5 +123,4 @@ public class EnemyCtroller : MonoBehaviour
         //Llamamos a atacar
         columnaAttack[row].GetComponent<EnemyAttack>().Attack(); //Del otro script, con la funcion de disparar  /////// Le dice cual es la columan y con row el k va a disparar
     }
-
 }
