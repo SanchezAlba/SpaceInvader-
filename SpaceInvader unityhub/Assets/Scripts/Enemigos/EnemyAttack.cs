@@ -25,10 +25,10 @@ public class EnemyAttack : MonoBehaviour
     {
         GameObject projectileObject = Instantiate(balaEnemigo, rigidbodyEnemigo.position + Vector2.down * 0.5f, Quaternion.identity);
         ProjectileNave projectile = projectileObject.GetComponent<ProjectileNave>();
-        projectile.Launch(Vector2.down, 300);
+        projectile.Launch(lookDirection, 300);
     }
 
-    /*void Update()
+    void Update()
     {
         if (transform.position.magnitude > 1000.0f)
         {
@@ -36,18 +36,9 @@ public class EnemyAttack : MonoBehaviour
         }
     }
 
-    void OnCollisionEnter2D(Collision2D other)
-    {
-        if (other.gameObject.tag == "Player")
-        {
-            other.gameObject.SetActive(false);  //Desactivar Naves
-        }
+  
 
-        Destroy(gameObject); //Para que el proyectil al chocarse se elimine
-
-    }*/
-
-    void OnCollisionEnter2D(Collision2D other)
+    /*void OnCollisionEnter2D(Collision2D other)    //No se pq pero al ponerlo en vez de desacativar enemios, los borra
     {
         if (other.gameObject.tag == "Player")
         {
@@ -62,6 +53,6 @@ public class EnemyAttack : MonoBehaviour
 
         Destroy(gameObject); //Para que el proyectil al chocarse se elimine
 
-    }
+    }*/
 
 }

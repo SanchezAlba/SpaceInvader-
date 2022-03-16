@@ -53,13 +53,13 @@ public class EnemyCtroller : MonoBehaviour
         }
         if(disparoEnemigo == true)
         {
-            timeEnemigo = 5f;
+            timeEnemigo = 3f;
             disparoEnemigo = false;
         }
 
 
         // /////////////////////  lo de clase, k al darle al espacio se borrase el ult enemigo
-        if (Input.GetKeyUp(KeyCode.Space))
+       /* if (Input.GetKeyUp(KeyCode.Space))
         {
             //cuando encuentre a alguien descatvado para la busqueda ->
             int lastx = enemiesList.Length-1; //lo ult activo
@@ -92,7 +92,7 @@ public class EnemyCtroller : MonoBehaviour
             //enemiesList[lastx].enemies[enemiesList[lastx].enemies.Length - 1].SetActive(true);
             enemiesList[lastx].enemies[lastY].SetActive(false);
             PrintArray();
-        }
+        }*/
 
        
 
