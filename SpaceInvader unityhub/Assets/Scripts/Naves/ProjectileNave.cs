@@ -43,7 +43,7 @@ public class ProjectileNave : MonoBehaviour
         if (other.gameObject.tag == "Marcianos") 
         {
          other.gameObject.SetActive(false);  //Desactivar enemigos
-            ContadorPuntos.puntosActuales += valorPuntos1;
+            ContadorPuntos.puntosActuales += valorPuntos3;
 
         }
 
@@ -57,7 +57,7 @@ public class ProjectileNave : MonoBehaviour
         if (other.gameObject.tag == "Marcianos3")
         {
             other.gameObject.SetActive(false);  //Desactivar enemigos
-            ContadorPuntos.puntosActuales += valorPuntos3;
+            ContadorPuntos.puntosActuales += valorPuntos1;
 
         }
 
@@ -68,7 +68,8 @@ public class ProjectileNave : MonoBehaviour
 
         if (other.gameObject.tag == "Player")
         {
-            other.gameObject.SetActive(false);  //Desactivar Escudos
+            other.gameObject.SetActive(false);  //Desactivar Enemigos
+           
         }
 
         if(other.gameObject.tag =="NaveNodriza")

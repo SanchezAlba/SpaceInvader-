@@ -14,6 +14,7 @@ public class MovimientoNaves : MonoBehaviour
     Vector2 lookDirection = new Vector2(1, 0);
 
     
+    
 
     void Start()
     {
