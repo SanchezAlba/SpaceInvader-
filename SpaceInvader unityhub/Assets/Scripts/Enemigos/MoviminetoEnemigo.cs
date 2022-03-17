@@ -39,13 +39,8 @@ public class MoviminetoEnemigo : MonoBehaviour
         }
 
 
-        /*if (collision.gameObject.tag == "Barrera")
-        {
-            movHorizontal = -movHorizontal;
-            movVertical = -movVertical;
-
-
-        }*/
+        //El mov en el escript enemy controller, creamos funcion, con 2 bucles for /(update)
+        // por ej: cada 1 segundo se muevan una casilla
 
     }
 

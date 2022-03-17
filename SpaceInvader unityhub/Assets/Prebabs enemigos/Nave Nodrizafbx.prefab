@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 3083343063267607185}
   m_Layer: 0
   m_Name: Nave Nodrizafbx
-  m_TagString: Untagged
+  m_TagString: NaveNodriza
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

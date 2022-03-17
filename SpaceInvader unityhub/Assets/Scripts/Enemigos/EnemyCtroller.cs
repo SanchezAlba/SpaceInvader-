@@ -27,6 +27,10 @@ public class EnemyCtroller : MonoBehaviour
     float timerNodrizaMin = 10;
     float timerNodrizaMax = 20;
 
+    //variables mov. Enemigos
+    float timerMov=1;
+
+
 
     private void awake()
     {
@@ -131,20 +135,25 @@ public class EnemyCtroller : MonoBehaviour
         int randomCol = UnityEngine.Random.Range(0, enemiesList.Length);  //Para que dispare de forma aleatoria
 
         //Buscar en la columna
-        GameObject[] columnaAttack = enemiesList[randomCol].enemies;
+        GameObject[] columnaAttack = enemiesList[randomCol].enemies; //Creamos esto para no tener que escribir todo eso cada vez.
 
 
         //Si esta activo es el ultimo. Me actualiza la Y
-        int row = 0;
+        int row = -1;
         for(int y=0;y< columnaAttack.Length;y++)  //columan attack aisla el numero que elijo de las listas en el inspector
         {
             if(columnaAttack[y].activeSelf == true)
             {
                 row = y; // saca el numero, (el ultimo, el ek va a disparar)
+
             }
         }
 
         //Llamamos a atacar
-        columnaAttack[row].GetComponent<EnemyAttack>().Attack(); //Del otro script, con la funcion de disparar  /////// Le dice cual es la columan y con row el k va a disparar
+        if(row != -1)
+        {
+            columnaAttack[row].GetComponent<EnemyAttack>().Attack(); //Del otro script, con la funcion de disparar  /////// Le dice cual es la columan y con row el k va a disparar
+        }
+        
     }
 }

@@ -8,7 +8,11 @@ public class ProjectileNave : MonoBehaviour
     Rigidbody2D rigidbody;
     int valorMarcinos = 1;
 
-    
+    //variables de puntos
+    int valorPuntos1 = 10;
+    int valorPuntos2 = 20;
+    int valorPuntos3 = 30;
+    int valorPuntosNave = 100;
 
     void Awake()
     {
@@ -39,6 +43,21 @@ public class ProjectileNave : MonoBehaviour
         if (other.gameObject.tag == "Marcianos") 
         {
          other.gameObject.SetActive(false);  //Desactivar enemigos
+            ContadorPuntos.puntosActuales += valorPuntos1;
+
+        }
+
+        if (other.gameObject.tag == "Marcianos2")
+        {
+            other.gameObject.SetActive(false);  //Desactivar enemigos
+            ContadorPuntos.puntosActuales += valorPuntos2;
+
+        }
+
+        if (other.gameObject.tag == "Marcianos3")
+        {
+            other.gameObject.SetActive(false);  //Desactivar enemigos
+            ContadorPuntos.puntosActuales += valorPuntos3;
 
         }
 
@@ -50,6 +69,12 @@ public class ProjectileNave : MonoBehaviour
         if (other.gameObject.tag == "Player")
         {
             other.gameObject.SetActive(false);  //Desactivar Escudos
+        }
+
+        if(other.gameObject.tag =="NaveNodriza")
+        {
+            other.gameObject.SetActive(false);
+            ContadorPuntos.puntosActuales += valorPuntosNave;
         }
 
 
