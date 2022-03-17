@@ -4,44 +4,37 @@ using UnityEngine;
 
 public class MoviminetoEnemigo : MonoBehaviour
 {
+    //El mov en el escript enemy controller, creamos funcion, con 2 bucles for /(update)
+    // por ej: cada 1 segundo se muevan una casilla
 
-    private float speed = 8.0f;
-    Vector3 movHorizontal = Vector3.right;
-    Vector3 movVertical = Vector3.down;
 
-    public static MoviminetoEnemigo instance;
+    float timer = 0;
+    float timeToMove = 0.5f;
+    int numOfMovements = 0;
+    float speed = 0.25f;
 
-    void Start()
+    private void Update()
     {
-        if (MoviminetoEnemigo.instance == null)
+        //mover pa abajo despues de X moviminetos
+        if(numOfMovements == 10)
         {
-            MoviminetoEnemigo.instance = this;
-        }
-
-        else
-        {
-            Destroy(this);
-        }
-
-    }
-
-    void Update()
-    {
-        transform.position += (movHorizontal) * Time.deltaTime * speed;
-    }
-
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.gameObject.tag == "Barrera")  //Cuando colisiona, el game object con ese tag, hará tal cosa
-        {
-
-            movHorizontal = -movHorizontal;
+            transform.Translate(new Vector3(0, -1, 0));
+            numOfMovements = -1;
+            speed = -speed;
+            timer = 0;
         }
 
 
-        //El mov en el escript enemy controller, creamos funcion, con 2 bucles for /(update)
-        // por ej: cada 1 segundo se muevan una casilla
-
+        //Mov pal lado
+        timer += Time.deltaTime;
+        if(timer > timeToMove && numOfMovements <10)
+        {
+            transform.Translate(new Vector3(speed, 0, 0));
+            timer = 0;
+            numOfMovements++;
+        }
     }
+
+ 
 
 }

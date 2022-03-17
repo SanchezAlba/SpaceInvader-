@@ -3697,6 +3697,7 @@ GameObject:
   - component: {fileID: 1810478681}
   - component: {fileID: 1810478682}
   - component: {fileID: 1810478683}
+  - component: {fileID: 1810478684}
   m_Layer: 0
   m_Name: Enemigos
   m_TagString: Untagged
@@ -3816,7 +3817,19 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
+--- !u!114 &1810478684
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1810478680}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e6ecd17ab93bbd34aa3c33b9ec4432b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1824720144 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1824964350173067027, guid: 7fbd0826d9d8e7649b312d85f2048632, type: 3}
