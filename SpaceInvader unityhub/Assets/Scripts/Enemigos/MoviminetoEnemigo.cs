@@ -11,7 +11,7 @@ public class MoviminetoEnemigo : MonoBehaviour
     float timer = 0;
     float timeToMove = 0.5f;
     int numOfMovements = 0;
-    float speed = 0.15f;
+    float speed = 0.25f;
 
     private void Update()
     {
