@@ -11,12 +11,12 @@ public class MoviminetoEnemigo : MonoBehaviour
     float timer = 0;
     float timeToMove = 0.5f;
     int numOfMovements = 0;
-    float speed = 0.25f;
+    float speed = 0.15f;
 
     private void Update()
     {
         //mover pa abajo despues de X moviminetos
-        if(numOfMovements == 10)
+        if (numOfMovements == 10)
         {
             transform.Translate(new Vector3(0, -1, 0));
             numOfMovements = -1;
@@ -27,7 +27,7 @@ public class MoviminetoEnemigo : MonoBehaviour
 
         //Mov pal lado
         timer += Time.deltaTime;
-        if(timer > timeToMove && numOfMovements <10)
+        if (timer > timeToMove && numOfMovements < 10)
         {
             transform.Translate(new Vector3(speed, 0, 0));
             timer = 0;
@@ -35,6 +35,6 @@ public class MoviminetoEnemigo : MonoBehaviour
         }
     }
 
- 
+    
 
 }

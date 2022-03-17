@@ -14,6 +14,9 @@ public class ProjectileNave : MonoBehaviour
     int valorPuntos3 = 30;
     int valorPuntosNave = 100;
 
+    //K la nave apareza cuando la matemos
+    Vector3 respawn = new Vector3(7,4,0);
+
     void Awake()
     {
         rigidbody = GetComponent<Rigidbody2D>();
@@ -34,6 +37,8 @@ public class ProjectileNave : MonoBehaviour
         {
             Destroy(gameObject);
         }
+
+     
     }
 
    
@@ -69,7 +74,7 @@ public class ProjectileNave : MonoBehaviour
         if (other.gameObject.tag == "Player")
         {
             other.gameObject.SetActive(false);  //Desactivar Enemigos
-           
+           //Para k al matar la nave aparezaca en X posicion //other.gameObject.transform.position = respawn;
         }
 
         if(other.gameObject.tag =="NaveNodriza")

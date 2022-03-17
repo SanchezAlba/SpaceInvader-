@@ -156,4 +156,16 @@ public class EnemyCtroller : MonoBehaviour
         }
         
     }
+
+
+    void OnCollisionEnter2D(Collision2D other) //no hace nada
+    {
+        if (other.gameObject.tag == "Escudos")
+        {
+            other.gameObject.SetActive(false);  //Desactivar escudos
+
+        }
+        Destroy(gameObject);
+
+    }
 }
