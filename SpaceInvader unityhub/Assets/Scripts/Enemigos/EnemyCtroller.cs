@@ -30,11 +30,14 @@ public class EnemyCtroller : MonoBehaviour
     //variables mov. Enemigos
     float timerMov=1;
 
+    // Para pasar de pantalla
+    public bool hasWon = false;
+    public GameObject pantallaGanaste;
 
-
-    private void awake()
+    private void start()
     {
         PrintArray();
+        pantallaGanaste.SetActive(false);
     }
 
     void PrintArray()
@@ -57,6 +60,12 @@ public class EnemyCtroller : MonoBehaviour
 
     private void Update()
     {
+        //Pantalla ganaste
+        if(hasWon == true)
+        {
+            pantallaGanaste.SetActive(true);
+        }
+
         timeEnemigo -= Time.deltaTime;
         timerNaveNodriza -= Time.deltaTime;
 
@@ -146,6 +155,12 @@ public class EnemyCtroller : MonoBehaviour
             {
                 row = y; // saca el numero, (el ultimo, el ek va a disparar)
 
+            }
+
+            //PA pasar de pantalla
+            else if(columnaAttack[y].activeSelf == false)
+            {
+                hasWon = true;
             }
         }
 
