@@ -31,16 +31,18 @@ public class EnemyCtroller : MonoBehaviour
     float timer = 0;
     float timeToMove = 0.5f;
     int numOfMovements = 0;
-    float speed = 0.25f;
+    float speed = 0.0025f;
 
     // Para pasar de pantalla
     public GameObject pantallaGanaste;
     public GameObject pantallaJuego;
 
+    public static EnemyCtroller instance;
     void Start()
     {
+        instance = this;
         PrintArray();
-       //pantallaGanaste.SetActive(false);
+       pantallaGanaste.SetActive(false);
     }
 
     void PrintArray()
@@ -129,48 +131,6 @@ public class EnemyCtroller : MonoBehaviour
             }
         }
         
-
-        
-
-
-        // /////////////////////  lo de clase, k al darle al espacio se borrase el ult enemigo
-       //if (Input.GetKeyUp(KeyCode.Space))
-        //{
-            //cuando encuentre a alguien descatvado para la busqueda ->
-            /*int lastx = enemiesList.Length-1; //lo ult activo
-            int lastY = enemiesList[lastx].enemies.Length-1;
-            bool foundLastActive = false; //saber si esta activo 
-                                          //Aqui nuevo bucle que calcula ult. X e Y
-
-            for (int x = 0; x < enemiesList.Length; x++) //recorre enemilist (la lista de los enemigos en el inspector)
-            {
-                for (int y = 0; y < enemiesList[x].enemies.Length; y++)  //Para que recorra dentro de las listas(ver los enemigos k hay) .Emeies el nombre dentro de las listas
-                {
-
-                    if (enemiesList[x].enemies[y].activeSelf == false && foundLastActive ==false) //este para la busqueda
-                    {
-
-                        foundLastActive = true; //encontre al ultimo, que esta muerto y para de buscar
-
-                        Debug.Log(enemiesList[x].enemies[y].name);  //para ver que los comprueba uno a uno
-                    }
-
-                    else if(enemiesList[x].enemies[y].activeSelf ==true && foundLastActive == false) //Dice cual es el ultimo activo _ todo esta activo, y no encontyro al ultimo
-                    {
-                        lastx = x; //establece como ultimo a la ultima x y ulti Y
-                        lastY = y;
-                    }
-
-                }
-            }
-
-            //enemiesList[lastx].enemies[enemiesList[lastx].enemies.Length - 1].SetActive(true);
-            enemiesList[lastx].enemies[lastY].SetActive(false); //ult x Y se vuelve falso al pulsar espacio
-            PrintArray();
-       // }*/
-
-       
-
     }
 
     //Mov nave nodriza
@@ -235,4 +195,13 @@ public class EnemyCtroller : MonoBehaviour
             timer = 0;
         }
     }
+
+    public void ChoqueEnBarrera()
+    {
+        transform.Translate(new Vector3(0, -0.05f, 0));
+        numOfMovements = -1;
+        speed = -speed;
+        timer = 0;
+    }
+
 }
