@@ -50,6 +50,7 @@ public class ProjectileNave : MonoBehaviour
          other.gameObject.SetActive(false);  //Desactivar enemigos
             ContadorPuntos.puntosActuales += valorPuntos3;
 
+
         }
 
         if (other.gameObject.tag == "Marcianos2")

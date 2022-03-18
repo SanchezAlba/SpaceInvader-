@@ -33,18 +33,20 @@ public class EnemyCtroller : MonoBehaviour
     // Para pasar de pantalla
     public bool hasWon = false;
     public GameObject pantallaGanaste;
+    public GameObject pantallaJuego;
+    //public static int enemigosVivos = 0;
 
     private void start()
     {
         PrintArray();
-        pantallaGanaste.SetActive(false);
+        //pantallaGanaste.SetActive(false);
     }
 
     void PrintArray()
     {
         for (int x = 0; x < enemiesList.Length; x++) //recorre enemilist (la lista de los enemigos en el inspector)
         {
-            for (int y = 0; y < enemiesList[x].enemies.Length; y++)  //Para que recorra dentro de las listas(ver los enemigos k hay) .Emeies el nombre dentro de las listas
+            for (int y = 0; y < enemiesList[x].enemies.Length; y++)  //Para que recorra dentro de las listas(ver los enemigos k hay) .Enemies el nombre dentro de las listas
             {
 
                 if (enemiesList[x].enemies[y].activeSelf == true)
@@ -61,30 +63,56 @@ public class EnemyCtroller : MonoBehaviour
     private void Update()
     {
         //Pantalla ganaste
-        if(hasWon == true)
+        /*if(hasWon == true)
         {
             pantallaGanaste.SetActive(true);
+            pantallaJuego.SetActive(false);
+        }*/
+
+        //Cambio de pantalla // ////////////////////////////////////////////////////////////////////////////////
+        int enemigosVivos = 27;//enemiesList.Length;//0;  //Cuenta los enemigos vivos 
+        for (int x = 0; x < enemiesList.Length; x++) //recorre enemilist (la lista de los enemigos en el inspector)
+        {
+            for (int y = 0; y < enemiesList[x].enemies.Length; y++)  //Para que recorra dentro de las listas(ver los enemigos k hay) .Enemies el nombre dentro de las listas
+            {
+
+                if (enemiesList[x].enemies[y].activeSelf == false) //Si está activo -> Se suman los enemigos vivos
+                {
+                    enemigosVivos--;
+                }
+            }
         }
 
-        timeEnemigo -= Time.deltaTime;
-        timerNaveNodriza -= Time.deltaTime;
+        if (enemigosVivos <= 0) //Si no hay enemigos es que ganaste
+        {
+            Debug.Log("Ganaste!!!");
+            pantallaGanaste.SetActive(true);
+        }
+        else
+        {
+            timeEnemigo -= Time.deltaTime;
+            timerNaveNodriza -= Time.deltaTime;
 
-        // Nave nodriza
-        if (timerNaveNodriza <= 0)
-        {
-            SpawnNaveNodriza(); 
-        }
+            // Nave nodriza
+            if (timerNaveNodriza <= 0)
+            {
+                SpawnNaveNodriza();
+            }
 
-        if(timeEnemigo <=0)
-        {
-            disparoEnemigo = true;
-            Attack();
+            if (timeEnemigo <= 0)
+            {
+                disparoEnemigo = true;
+                Attack();
+            }
+            if (disparoEnemigo == true)
+            {
+                timeEnemigo = 2f;
+                disparoEnemigo = false;
+            }
         }
-        if(disparoEnemigo == true)
-        {
-            timeEnemigo = 2f;
-            disparoEnemigo = false;
-        }
+        
+
+        
 
 
         // /////////////////////  lo de clase, k al darle al espacio se borrase el ult enemigo
@@ -104,7 +132,7 @@ public class EnemyCtroller : MonoBehaviour
                     if (enemiesList[x].enemies[y].activeSelf == false && foundLastActive ==false) //este para la busqueda
                     {
 
-                        foundLastActive = true; //encontre al ultimo, que esta muerto y paar de buscar
+                        foundLastActive = true; //encontre al ultimo, que esta muerto y para de buscar
 
                         Debug.Log(enemiesList[x].enemies[y].name);  //para ver que los comprueba uno a uno
                     }
@@ -157,11 +185,11 @@ public class EnemyCtroller : MonoBehaviour
 
             }
 
-            //PA pasar de pantalla
-            else if(columnaAttack[y].activeSelf == false)
+            //Para pasar de pantalla
+            /*else if(columnaAttack[y].activeSelf == false)
             {
                 hasWon = true;
-            }
+            }*/
         }
 
         //Llamamos a atacar
@@ -180,7 +208,7 @@ public class EnemyCtroller : MonoBehaviour
             other.gameObject.SetActive(false);  //Desactivar escudos
 
         }
-        Destroy(gameObject);
+   
 
     }
 }

@@ -27,7 +27,7 @@ public class MovimientoNaves : MonoBehaviour
 
     void Update()
     {
-        Debug.Log(speedDisparo);
+        //Debug.Log(speedDisparo);
         speedDisparo -= Time.deltaTime;
         
 
