@@ -27,33 +27,33 @@ public class EnemyCtroller : MonoBehaviour
     float timerNodrizaMin = 10;
     float timerNodrizaMax = 20;
 
-    //variables mov. Enemigos
-    float timerMov=1;
+    // Variables mov. Enemigos
+    float timer = 0;
+    float timeToMove = 0.5f;
+    int numOfMovements = 0;
+    float speed = 0.25f;
 
     // Para pasar de pantalla
-    public bool hasWon = false;
     public GameObject pantallaGanaste;
     public GameObject pantallaJuego;
-    //public static int enemigosVivos = 0;
 
-    private void start()
+    void Start()
     {
         PrintArray();
-        //pantallaGanaste.SetActive(false);
+       pantallaGanaste.SetActive(false);
     }
 
     void PrintArray()
     {
         for (int x = 0; x < enemiesList.Length; x++) //recorre enemilist (la lista de los enemigos en el inspector)
         {
-            for (int y = 0; y < enemiesList[x].enemies.Length; y++)  //Para que recorra dentro de las listas(ver los enemigos k hay) .Enemies el nombre dentro de las listas
+            for (int y = 0; y < enemiesList[x].enemies.Length; y++)  //Para que recorra dentro de las listas(ver los enemigos k hay) .Enemies el nombre dentro de las listas por eso esta linea revisa las columnas
             {
 
                 if (enemiesList[x].enemies[y].activeSelf == true)
                 {
                     Debug.Log(enemiesList[x].enemies[y].name);  //para ver que los comprueba uno a uno
                 }
-
 
             }
         }
@@ -62,21 +62,39 @@ public class EnemyCtroller : MonoBehaviour
 
     private void Update()
     {
-        //Pantalla ganaste
-        /*if(hasWon == true)
-        {
-            pantallaGanaste.SetActive(true);
-            pantallaJuego.SetActive(false);
-        }*/
 
-        //Cambio de pantalla // ////////////////////////////////////////////////////////////////////////////////
+        ////////////Movimiento enemios  ///////
+        //mover pa abajo despues de X moviminetos
+        for (int x = 0; x < enemiesList.Length; x++) //recorre enemilist (la lista de los enemigos en el inspector)
+        {
+            for (int y = 0; y < enemiesList[x].enemies.Length; y++)  //Para que recorra dentro de las listas(ver los enemigos k hay) .Enemies el nombre dentro de las listas
+            {
+                if (enemiesList[x].enemies[y].activeSelf == true)
+                {
+                    timer += Time.deltaTime;
+                    if (timer > timeToMove)
+                    {
+                        transform.Translate(new Vector3(speed, 0, 0));
+                        timer = 0;
+                        numOfMovements++;
+                    }
+
+                    //cuando choca en on collision
+                   
+                }
+
+            }
+        }
+
+
+        //Cambio de pantalla // //////////////////////////////
         int enemigosVivos = 27;//enemiesList.Length;//0;  //Cuenta los enemigos vivos 
         for (int x = 0; x < enemiesList.Length; x++) //recorre enemilist (la lista de los enemigos en el inspector)
         {
             for (int y = 0; y < enemiesList[x].enemies.Length; y++)  //Para que recorra dentro de las listas(ver los enemigos k hay) .Enemies el nombre dentro de las listas
             {
 
-                if (enemiesList[x].enemies[y].activeSelf == false) //Si está activo -> Se suman los enemigos vivos
+                if (enemiesList[x].enemies[y].activeSelf == false) //Si está desactivaado se restan enemigos vivos y al llegar a 0 aparece la pantalla
                 {
                     enemigosVivos--;
                 }
@@ -201,14 +219,20 @@ public class EnemyCtroller : MonoBehaviour
     }
 
 
-    void OnCollisionEnter2D(Collision2D other) //no hace nada
+    public void OnCollisionEnter2D(Collision2D other) //no hace nada
     {
         if (other.gameObject.tag == "Escudos")
         {
             other.gameObject.SetActive(false);  //Desactivar escudos
-
         }
-   
 
+        //Movimiento al chocar
+        if (other.gameObject.tag == "Barrera")
+        {
+            transform.Translate(new Vector3(0, -1, 0));
+            numOfMovements = -1;
+            speed = -speed;
+            timer = 0;
+        }
     }
 }
