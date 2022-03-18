@@ -21,9 +21,9 @@ public class SceneController : MonoBehaviour
         
     }
 
-    public void GoMenuPrincipal()
+    public void GoMenuPrincipal(int indice)
     {
-        SceneManager.LoadScene(ScenNavePrincipal);
+        SceneManager.LoadScene(indice);
     }
 
 }

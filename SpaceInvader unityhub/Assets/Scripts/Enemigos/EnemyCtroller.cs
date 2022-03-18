@@ -40,7 +40,7 @@ public class EnemyCtroller : MonoBehaviour
     void Start()
     {
         PrintArray();
-       pantallaGanaste.SetActive(false);
+       //pantallaGanaste.SetActive(false);
     }
 
     void PrintArray()
