@@ -76,7 +76,8 @@ public class ProjectileNave : MonoBehaviour
         if (other.gameObject.tag == "Player")
         {
             other.gameObject.SetActive(false);  //Desactivar Enemigos
-           //Para k al matar la nave aparezaca en X posicion //other.gameObject.transform.position = respawn;
+                                                //Para k al matar la nave aparezaca en X posicion //other.gameObject.transform.position = respawn;
+            Debug.Log("Perdiste");
         }
 
         if(other.gameObject.tag =="NaveNodriza")

@@ -30,7 +30,8 @@ public class MovimientoNaves : MonoBehaviour
         //Debug.Log(speedDisparo);
         speedDisparo -= Time.deltaTime;
         
-
+        
+        
        
         ///////////////////////////////////////////////////////
 
