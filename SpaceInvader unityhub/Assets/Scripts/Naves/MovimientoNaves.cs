@@ -54,12 +54,14 @@ public class MovimientoNaves : MonoBehaviour
         {
             Launch();
             boolDisparos = true;
+            //timer Heat =10/heat // al dividie el num, si cadencia es 7 va mas rapido que si la cadencia es 1
+            //timerHeat es el gamedata persosyent...heat
           
         }
         
         if(boolDisparos==true)
         {
-            speedDisparo = GameDataPersistent.instance.selectedSpaceship.heat;
+            speedDisparo = GameDataPersistent.instance.selectedSpaceship.heat; //para que  el tiempo empice el tiempo
             boolDisparos = false;
             
         }

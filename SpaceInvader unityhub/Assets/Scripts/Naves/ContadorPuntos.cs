@@ -15,4 +15,9 @@ public class ContadorPuntos : MonoBehaviour
         contador.text = puntosActuales.ToString();
         totalPuntos.text = puntosActuales.ToString();
     }
+    void AddPoint(int puntosenemigo)
+    {
+        //points = untos enemigp
+        //(destoy gameobject)
+    }
 }
