@@ -65,8 +65,8 @@ public class EnemyCtroller : MonoBehaviour
     private void Update()
     {
 
-        ////////////Movimiento enemios  ///////
-        //mover pa abajo despues de X moviminetos
+        ///////// MOVIMIENTO ENEMIGOS ///////
+      
         for (int x = 0; x < enemiesList.Length; x++) //recorre enemilist (la lista de los enemigos en el inspector)
         {
             for (int y = 0; y < enemiesList[x].enemies.Length; y++)  //Para que recorra dentro de las listas(ver los enemigos k hay) .Enemies el nombre dentro de las listas
@@ -89,19 +89,21 @@ public class EnemyCtroller : MonoBehaviour
         }
 
 
-        //Cambio de pantalla // //////////////////////////////
+        //CAMBIO DE PANTALLA // //////////////////////////////
         int enemigosVivos = 27;//enemiesList.Length;//0;  //Cuenta los enemigos vivos 
         for (int x = 0; x < enemiesList.Length; x++) //recorre enemilist (la lista de los enemigos en el inspector)
         {
             for (int y = 0; y < enemiesList[x].enemies.Length; y++)  //Para que recorra dentro de las listas(ver los enemigos k hay) .Enemies el nombre dentro de las listas
             {
-
                 if (enemiesList[x].enemies[y].activeSelf == false) //Si está desactivaado se restan enemigos vivos y al llegar a 0 aparece la pantalla
                 {
                     enemigosVivos--;
                 }
             }
         }
+
+        //Si lo pongo de la otra forma, que enmigod vivos sea 0, y me vaya restand, tengo que igualar la variable a 0,
+        //para que vuekva a contar de sde ahi, si no pasa que en cada vez que lee bucle me pone que hay el dobe de enemigos y asi.
 
         if (enemigosVivos <= 0) //Si no hay enemigos es que ganaste
         {

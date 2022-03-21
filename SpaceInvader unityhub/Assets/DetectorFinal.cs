@@ -13,5 +13,11 @@ public class DetectorFinal : MonoBehaviour
             EnemyCtroller.instance.ChoqueEnBarrera();
 
         }
+
+        if (collision.gameObject.tag == "Escudos")
+        {
+            EnemyCtroller.instance.ChoqueEnBarrera();
+            collision.gameObject.SetActive(false);  //Desactivar escudos
+        }
     }
 }
