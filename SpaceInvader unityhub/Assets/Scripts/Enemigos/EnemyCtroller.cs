@@ -29,9 +29,9 @@ public class EnemyCtroller : MonoBehaviour
 
     // Variables mov. Enemigos
     float timer = 0;
-    float timeToMove = 0.5f;
+    float timeToMove = 11f;
     int numOfMovements = 0;
-    float speed = 0.0025f;
+    float speed = 0.025f;
 
     // Para pasar de pantalla
     public GameObject pantallaGanaste;
@@ -66,7 +66,7 @@ public class EnemyCtroller : MonoBehaviour
     {
 
         ///////// MOVIMIENTO ENEMIGOS ///////
-      
+        //mover pa abajo despues de X moviminetos
         for (int x = 0; x < enemiesList.Length; x++) //recorre enemilist (la lista de los enemigos en el inspector)
         {
             for (int y = 0; y < enemiesList[x].enemies.Length; y++)  //Para que recorra dentro de las listas(ver los enemigos k hay) .Enemies el nombre dentro de las listas
@@ -76,7 +76,7 @@ public class EnemyCtroller : MonoBehaviour
                     timer += Time.deltaTime;
                     if (timer > timeToMove)
                     {
-                        transform.Translate(new Vector3(speed, 0, 0));
+                        transform.position+=(new Vector3(speed, 0, 0)); 
                         timer = 0;
                         numOfMovements++;
                     }
@@ -180,7 +180,7 @@ public class EnemyCtroller : MonoBehaviour
         
     }
 
-
+    //Esta en el script de DetectorFinal
     public void OnCollisionEnter2D(Collision2D other) //no hace nada
     {
         if (other.gameObject.tag == "Escudos")
