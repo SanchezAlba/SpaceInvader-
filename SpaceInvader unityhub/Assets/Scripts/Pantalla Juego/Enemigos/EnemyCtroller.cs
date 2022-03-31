@@ -29,13 +29,14 @@ public class EnemyCtroller : MonoBehaviour
 
     // Variables mov. Enemigos
     float timer = 0;
-    float timeToMove = 11f;
+    float timeToMove = 15f;
     int numOfMovements = 0;
     float speed = 0.025f;
 
     // Para pasar de pantalla
     public GameObject pantallaGanaste;
     public GameObject pantallaJuego;
+    
 
     public static EnemyCtroller instance;
     void Start()
@@ -43,6 +44,7 @@ public class EnemyCtroller : MonoBehaviour
         instance = this;
         PrintArray();
        pantallaGanaste.SetActive(false);
+       
     }
 
     void PrintArray()
@@ -54,7 +56,7 @@ public class EnemyCtroller : MonoBehaviour
 
                 if (enemiesList[x].enemies[y].activeSelf == true)
                 {
-                    Debug.Log(enemiesList[x].enemies[y].name);  //para ver que los comprueba uno a uno
+                   // Debug.Log(enemiesList[x].enemies[y].name);  //para ver que los comprueba uno a uno
                 }
 
             }
@@ -132,7 +134,9 @@ public class EnemyCtroller : MonoBehaviour
                 disparoEnemigo = false;
             }
         }
-        
+
+      
+
     }
 
     //Mov nave nodriza
@@ -196,6 +200,8 @@ public class EnemyCtroller : MonoBehaviour
             speed = -speed;
             timer = 0;
         }
+
+       
     }
 
     public void ChoqueEnBarrera()
