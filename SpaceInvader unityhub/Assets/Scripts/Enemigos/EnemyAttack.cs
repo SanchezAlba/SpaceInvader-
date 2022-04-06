@@ -24,7 +24,7 @@ public class EnemyAttack : MonoBehaviour
     public void Attack() //misma funcion de ataque, poner scripot en l empty con los enemigos y eaqui se poine el proyectil
     {
         GameObject projectileObject = Instantiate(balaEnemigo, rigidbodyEnemigo.position + Vector2.down * 0.5f, Quaternion.identity);
-        ProjectileNave projectile = projectileObject.GetComponent<ProjectileNave>();
+        ProyectilEnemigo projectile = projectileObject.GetComponent<ProyectilEnemigo>();
         projectile.Launch(lookDirection, 300);
     }
 

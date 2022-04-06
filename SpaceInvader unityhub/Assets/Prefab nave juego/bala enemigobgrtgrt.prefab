@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 7430194828608208960}
   - component: {fileID: 4501051040112338613}
   - component: {fileID: 4673441667156820145}
-  - component: {fileID: -6918271723357698547}
+  - component: {fileID: 8503869577534829894}
   m_Layer: 13
   m_Name: bala enemigobgrtgrt
   m_TagString: Untagged
@@ -132,7 +132,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 5
---- !u!114 &-6918271723357698547
+--- !u!114 &8503869577534829894
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -141,6 +141,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 5534978903054154771}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8fb284f5155cb8744a45800e494ba794, type: 3}
+  m_Script: {fileID: 11500000, guid: 73c70b1f818831344b48c110ca5ea574, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
