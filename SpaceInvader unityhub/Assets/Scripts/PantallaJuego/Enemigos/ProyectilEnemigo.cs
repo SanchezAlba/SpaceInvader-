@@ -54,6 +54,7 @@ public class ProyectilEnemigo : MonoBehaviour
             other.gameObject.SetActive(false);  //Desactivar Enemigos
                                                 //Para k al matar la nave aparezaca en X posicion //other.gameObject.transform.position = respawn;
             Debug.Log("Perdiste");
+            ScreenManager.instance.PantallaPerdiste();
         }
 
 
