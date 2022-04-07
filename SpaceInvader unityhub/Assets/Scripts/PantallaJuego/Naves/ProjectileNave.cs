@@ -48,33 +48,33 @@ public class ProjectileNave : MonoBehaviour
         if (other.gameObject.tag == "Marcianos") 
         {
          other.gameObject.SetActive(false);  //Desactivar enemigos
-            ContadorPuntos.puntosActuales += 20;
-            ContadorPuntos.puntosAcertados += 1;
+            ContadorPuntos.puntosActuales += valorPuntos3;
+            //ContadorPuntos.puntosAcertados += 1;
 
         }
 
         if (other.gameObject.tag == "Marcianos2")
         {
             other.gameObject.SetActive(false);  //Desactivar enemigos
-            ContadorPuntos.puntosActuales += 20;
-            ContadorPuntos.puntosAcertados += 1;
+            ContadorPuntos.puntosActuales += valorPuntos2;
+            //ContadorPuntos.puntosAcertados += 1;
 
         }
 
         if (other.gameObject.tag == "Marcianos3")
         {
             other.gameObject.SetActive(false);  //Desactivar enemigos
-            ContadorPuntos.puntosActuales += 20;
+            ContadorPuntos.puntosActuales += valorPuntos1;
             //Destroy(other.gameObject); Pa que se destruya el enemigo
-            ContadorPuntos.puntosAcertados += 1;
+            //ContadorPuntos.puntosAcertados += 1;
 
         }
 
         if (other.gameObject.tag == "Escudos")
         {
             other.gameObject.SetActive(false);  //Desactivar Escudos
-            ContadorPuntos.puntosDesperdiciados++;
-            ContadorPuntos.puntosActuales = 0;
+            //ContadorPuntos.puntosDesperdiciados++;
+            //ContadorPuntos.puntosActuales = 0;
         }
 
         if (other.gameObject.tag == "Player")
@@ -92,8 +92,8 @@ public class ProjectileNave : MonoBehaviour
 
         if (other.gameObject.tag == "Barrera")
         {
-            ContadorPuntos.puntosActuales = 0;
-            ContadorPuntos.puntosDesperdiciados++;
+            //ContadorPuntos.puntosActuales = 0;
+            //ContadorPuntos.puntosDesperdiciados++;
         }
 
 

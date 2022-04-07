@@ -15,11 +15,14 @@ public class ContadorPuntos : MonoBehaviour
     public static int puntosAcertados = 0;
 
     public static int puntosActuales =0;
+    public TextMeshProUGUI puntosPerdiste;
 
     void Update()
     {
         contador.text = puntosActuales.ToString();
         totalPuntos.text = puntosActuales.ToString();
+        puntosPerdiste.text = puntosActuales.ToString();
+
         labelPuntosDesperdiciados.text = "Puntos Desperdiciados    " + puntosDesperdiciados.ToString();
         labelPuntosAcertador.text = "Puntos Acertados   " + puntosAcertados.ToString();
 
