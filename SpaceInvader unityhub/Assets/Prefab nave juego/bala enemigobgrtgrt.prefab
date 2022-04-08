@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 8503869577534829894}
   m_Layer: 13
   m_Name: bala enemigobgrtgrt
-  m_TagString: Untagged
+  m_TagString: BalaEnemigo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

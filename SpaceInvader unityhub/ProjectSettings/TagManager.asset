@@ -11,6 +11,7 @@ TagManager:
   - NaveNodriza
   - Marcianos2
   - Marcianos3
+  - BalaEnemigo
   layers:
   - Default
   - TransparentFX

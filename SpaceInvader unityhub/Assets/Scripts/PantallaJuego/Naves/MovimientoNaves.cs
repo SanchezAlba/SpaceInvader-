@@ -9,6 +9,12 @@ public class MovimientoNaves : MonoBehaviour
 
     Rigidbody2D rigidbody;
     public GameObject projectilePrefab;
+
+    //CAMBIOS
+    public GameObject projectilePrefab1; //destruye todo
+    public GameObject projectilePrefab2; //destruye hasta el ultimo
+
+
     public bool boolDisparos = false;
 
     Vector2 lookDirection = new Vector2(1, 0);
@@ -59,8 +65,24 @@ public class MovimientoNaves : MonoBehaviour
             //timerHeat es el gamedata persosyent...heat
           
         }
-        
-        if(boolDisparos==true)
+
+        // ///// Bala que destruye todo
+        if (speedDisparo <= 0 && Input.GetKeyDown(KeyCode.Space))
+        {
+            Launch1();
+            boolDisparos = true;
+        }
+
+        // ///// Bala que destruye casi todo
+        if (speedDisparo <= 0 && Input.GetKeyDown(KeyCode.M))
+        {
+            Launch2();
+            boolDisparos = true;
+        }
+
+
+
+        if (boolDisparos==true)
         {
             speedDisparo = GameDataPersistent.instance.selectedSpaceship.heat; //para que  el tiempo empice el tiempo
             boolDisparos = false;
@@ -78,4 +100,26 @@ public class MovimientoNaves : MonoBehaviour
         projectile.Launch(Vector2.up, 300);
 
     }
+
+
+    //Bala que destruye todo
+    public void Launch1() 
+    {
+        GameObject projectileObject = Instantiate(projectilePrefab1, rigidbody.position + Vector2.up * 0.7f, Quaternion.identity);
+
+        BalaDestruye bala = projectileObject.GetComponent<BalaDestruye>();
+        bala.Launch(Vector2.up, 300);
+
+    }
+
+
+    //Bala se Para al llegar al ult enemigo
+    public void Launch2()
+    {
+        GameObject projectileObject = Instantiate(projectilePrefab2, rigidbody.position + Vector2.up * 0.7f, Quaternion.identity);
+
+        BalaSePara balaPara = projectileObject.GetComponent<BalaSePara>();
+        balaPara.Launch(Vector2.up, 300);
+    }
+
 }
